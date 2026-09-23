@@ -1,0 +1,4996 @@
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#0b9f55">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification"
+          content="-RKgSOOg8rS_yUXdLxoTJs0b_thGw6EVeQrJNW-1NgM">
+
+    <!-- SEO -->
+    <title>Partner Panel - COVAI SCRAP HUB | Scrap Pickup Partner</title>
+
+    <meta name="description"
+          content="COVAI SCRAP HUB Partner Panel for authorized scrap pickup partners. Manage pickup requests, customer details, assigned collections, pickup status and scrap collection activities in Coimbatore.">
+
+    <meta name="keywords"
+          content="COVAI SCRAP HUB Partner, scrap pickup partner, scrap collection partner, scrap pickup Coimbatore, scrap dealer partner, waste collection partner, online scrap collection">
+
+    <meta name="author" content="COVAI SCRAP HUB">
+
+    <meta name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="googlebot"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical -->
+    <link rel="canonical"
+          href="https://covaiscraphup.vercel.app/partner.html">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/jpeg"
+          href="logo.jpg">
+
+    <link rel="shortcut icon"
+          type="image/jpeg"
+          href="logo.jpg">
+
+    <link rel="apple-touch-icon"
+          href="logo.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+          content="Partner Panel - COVAI SCRAP HUB">
+
+    <meta property="og:description"
+          content="COVAI SCRAP HUB Partner Panel for managing scrap pickup requests and collection activities.">
+
+    <meta property="og:url"
+          content="https://covaiscraphup.vercel.app/partner.html">
+
+    <meta property="og:site_name"
+          content="COVAI SCRAP HUB">
+
+    <meta property="og:image"
+          content="https://covaiscraphup.vercel.app/logo.jpg">
+
+    <meta property="og:image:alt"
+          content="COVAI SCRAP HUB Partner Panel">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Partner Panel - COVAI SCRAP HUB">
+
+    <meta name="twitter:description"
+          content="Manage scrap pickup requests and collection activities with the COVAI SCRAP HUB Partner Panel.">
+
+    <meta name="twitter:image"
+          content="https://covaiscraphup.vercel.app/logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "COVAI SCRAP HUB Partner Panel",
+        "url": "https://covaiscraphup.vercel.app/partner.html",
+        "description": "Partner panel for COVAI SCRAP HUB scrap pickup and collection partners.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "COVAI SCRAP HUB",
+            "url": "https://covaiscraphup.vercel.app/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "COVAI SCRAP HUB",
+            "url": "https://covaiscraphup.vercel.app/"
+        }
+    }
+    </script>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+:root{
+  --green:#0b9f55;
+  --green2:#087c42;
+  --green3:#e9f9f0;
+  --dark:#10231a;
+  --text:#17231d;
+  --muted:#718078;
+  --border:#e5ece8;
+  --bg:#f4f8f6;
+  --white:#fff;
+  --blue:#2563eb;
+  --bluebg:#eff6ff;
+  --orange:#f59e0b;
+  --orangebg:#fff8e8;
+  --red:#ef4444;
+  --redbg:#fff1f1;
+  --shadow:0 8px 30px rgba(16,35,26,.07);
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  background:
+    radial-gradient(circle at top right,#dff8e9 0,transparent 30%),
+    var(--bg);
+  color:var(--text);
+  min-height:100vh;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(229,236,232,.9);
+}
+
+.header-inner{
+  max-width:1180px;
+  margin:auto;
+  min-height:68px;
+  padding:10px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  min-width:0;
+}
+
+.logo{
+  width:42px;
+  height:42px;
+  border-radius:13px;
+  object-fit:cover;
+  background:#e9f9f0;
+  box-shadow:0 5px 15px rgba(11,159,85,.15);
+}
+
+.brand-text{
+  min-width:0;
+}
+
+.brand-name{
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:-.3px;
+  white-space:nowrap;
+}
+
+.brand-sub{
+  color:var(--muted);
+  font-size:10px;
+  font-weight:700;
+  margin-top:2px;
+}
+
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.partner-badge{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  background:var(--green3);
+  color:var(--green2);
+  border:1px solid #cdeedb;
+  border-radius:999px;
+  padding:8px 11px;
+  font-size:10px;
+  font-weight:900;
+  max-width:150px;
+}
+
+.partner-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 0 4px rgba(11,159,85,.1);
+}
+
+.refresh-btn{
+  width:38px;
+  height:38px;
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:17px;
+  display:grid;
+  place-items:center;
+  transition:.2s;
+}
+
+.refresh-btn:active{
+  transform:scale(.94);
+}
+
+/* ================= MAIN ================= */
+
+main{
+  max-width:1180px;
+  margin:auto;
+  padding:18px;
+}
+
+/* ================= WELCOME ================= */
+
+.hero{
+  background:
+    linear-gradient(135deg,#087c42,#0b9f55 60%,#14b866);
+  color:#fff;
+  border-radius:22px;
+  padding:22px;
+  margin-bottom:15px;
+  box-shadow:0 12px 35px rgba(11,159,85,.20);
+  position:relative;
+  overflow:hidden;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  background:rgba(255,255,255,.08);
+  right:-60px;
+  top:-65px;
+}
+
+.hero h1{
+  font-size:24px;
+  line-height:1.1;
+  font-weight:900;
+  letter-spacing:-.7px;
+  position:relative;
+  z-index:2;
+}
+
+.hero p{
+  margin-top:7px;
+  font-size:12px;
+  opacity:.88;
+  position:relative;
+  z-index:2;
+}
+
+.hero-status{
+  margin-top:15px;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  padding:8px 11px;
+  font-size:10px;
+  font-weight:800;
+}
+
+/* ================= INPUT ================= */
+
+.partner-input-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:16px;
+  box-shadow:var(--shadow);
+  margin-bottom:15px;
+}
+
+.input-title{
+  font-size:14px;
+  font-weight:900;
+  margin-bottom:4px;
+}
+
+.input-sub{
+  font-size:11px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.auth-input{
+  width:100%;
+  height:45px;
+  border:1.5px solid var(--border);
+  border-radius:12px;
+  padding:0 13px;
+  font-size:13px;
+  font-weight:650;
+  outline:none;
+  background:#fbfdfc;
+  color:var(--text);
+}
+
+.auth-input:focus{
+  border-color:var(--green);
+  background:#fff;
+  box-shadow:0 0 0 3px rgba(11,159,85,.08);
+}
+
+.login-message{
+  display:none;
+  margin-top:10px;
+  padding:10px 11px;
+  border-radius:11px;
+  font-size:10px;
+  font-weight:800;
+  line-height:1.45;
+}
+
+.join-card{
+  margin-top:14px;
+  padding:13px;
+  border-radius:14px;
+  background:#f0faf4;
+  border:1px solid #cdeedb;
+}
+
+.join-title{
+  color:#087c42;
+  font-size:11px;
+  font-weight:950;
+}
+
+.join-text{
+  margin-top:5px;
+  color:#53635a;
+  font-size:10px;
+  line-height:1.5;
+  font-weight:650;
+}
+
+.join-call{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:39px;
+  margin-top:10px;
+  border-radius:10px;
+  background:var(--green);
+  color:#fff;
+  text-decoration:none;
+  font-size:10px;
+  font-weight:950;
+}
+
+.logged-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.logged-info{
+  min-width:0;
+}
+
+.logout-main{
+  flex:none;
+  min-height:38px;
+  padding:0 12px;
+  border:0;
+  border-radius:10px;
+  background:#fff0f0;
+  color:#dc2626;
+  font-size:9px;
+  font-weight:950;
+  cursor:pointer;
+}
+
+.input-group{
+  display:flex;
+  gap:8px;
+}
+
+.input-group input{
+  min-width:0;
+  flex:1;
+  height:45px;
+  border:1.5px solid var(--border);
+  border-radius:12px;
+  padding:0 13px;
+  font-size:13px;
+  font-weight:600;
+  outline:none;
+  background:#fbfdfc;
+  color:var(--text);
+}
+
+.input-group input:focus{
+  border-color:var(--green);
+  background:#fff;
+  box-shadow:0 0 0 3px rgba(11,159,85,.08);
+}
+
+.load-btn{
+  height:45px;
+  border:0;
+  border-radius:12px;
+  padding:0 16px;
+  background:var(--green);
+  color:#fff;
+  font-weight:900;
+  font-size:12px;
+  cursor:pointer;
+  box-shadow:0 6px 15px rgba(11,159,85,.18);
+  white-space:nowrap;
+}
+
+.load-btn:active{
+  transform:scale(.97);
+}
+
+/* ================= STATS ================= */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-bottom:15px;
+}
+
+.stat-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:13px;
+  box-shadow:0 5px 20px rgba(16,35,26,.045);
+  position:relative;
+  overflow:hidden;
+}
+
+.stat-card:after{
+  content:"";
+  position:absolute;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:var(--green3);
+  right:-18px;
+  bottom:-18px;
+}
+
+.stat-icon{
+  font-size:17px;
+  margin-bottom:7px;
+}
+
+.stat-label{
+  color:var(--muted);
+  font-size:9px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.3px;
+}
+
+.stat-value{
+  font-size:23px;
+  line-height:1;
+  margin-top:4px;
+  font-weight:950;
+  color:var(--dark);
+}
+
+/* ================= SECTION HEADER ================= */
+
+.section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin:18px 2px 10px;
+}
+
+.section-title{
+  font-size:16px;
+  font-weight:950;
+  letter-spacing:-.3px;
+}
+
+.section-count{
+  background:#fff;
+  border:1px solid var(--border);
+  color:var(--muted);
+  border-radius:999px;
+  padding:5px 9px;
+  font-size:10px;
+  font-weight:900;
+}
+
+/* ================= PICKUPS ================= */
+
+.pickups-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+
+.pickup-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:19px;
+  padding:15px;
+  box-shadow:var(--shadow);
+  position:relative;
+  overflow:hidden;
+}
+
+.pickup-card.live{
+  border-color:#bcebd0;
+}
+
+.card-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+  padding-right:1px;
+}
+
+.customer-wrap{
+  min-width:0;
+}
+
+.customer-name{
+  font-size:16px;
+  font-weight:950;
+  line-height:1.2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.pickup-id{
+  margin-top:4px;
+  font-size:9px;
+  color:#98a39d;
+  font-weight:700;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.status-badge{
+  flex:none;
+  padding:6px 9px;
+  border-radius:999px;
+  font-size:9px;
+  font-weight:900;
+  background:var(--green3);
+  color:var(--green2);
+  border:1px solid #cdeedb;
+  white-space:nowrap;
+}
+
+.status-badge.warning{
+  background:var(--orangebg);
+  color:#a16207;
+  border-color:#fde7a8;
+}
+
+.status-badge.blue{
+  background:var(--bluebg);
+  color:#1d4ed8;
+  border-color:#bfdbfe;
+}
+
+.status-badge.red{
+  background:var(--redbg);
+  color:#b91c1c;
+  border-color:#fecaca;
+}
+
+/* ================= CUSTOMER MINI ================= */
+
+.customer-mini{
+  margin-top:13px;
+  padding:10px;
+  border-radius:13px;
+  background:#f8fbf9;
+  border:1px solid #edf2ef;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
+
+.customer-contact{
+  min-width:0;
+}
+
+.customer-contact-label{
+  color:var(--muted);
+  font-size:8px;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+.customer-phone{
+  margin-top:3px;
+  font-size:12px;
+  font-weight:850;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.call-small{
+  flex:none;
+  text-decoration:none;
+  width:35px;
+  height:35px;
+  border-radius:10px;
+  background:#eaf8f0;
+  color:var(--green2);
+  display:grid;
+  place-items:center;
+  font-size:16px;
+}
+
+/* ================= DETAILS ================= */
+
+.card-details{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+  margin-top:10px;
+}
+
+.detail-item{
+  background:#fafcfb;
+  border:1px solid #edf1ee;
+  border-radius:10px;
+  padding:9px;
+  min-width:0;
+}
+
+.detail-label{
+  font-size:8px;
+  color:#8a958f;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+.detail-value{
+  margin-top:4px;
+  font-size:11px;
+  font-weight:900;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* ================= ADDRESS ================= */
+
+.address-box{
+  margin-top:10px;
+  padding:11px;
+  border-radius:12px;
+  background:#f8faf9;
+  border:1px solid #edf1ee;
+}
+
+.address-title{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  font-size:9px;
+  font-weight:900;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+.address-text{
+  margin-top:5px;
+  font-size:11px;
+  line-height:1.5;
+  color:#39453f;
+  font-weight:600;
+}
+
+/* ================= GPS ================= */
+
+.gps-status-box{
+  margin-top:10px;
+  border-radius:13px;
+  padding:11px;
+  background:#ecfdf3;
+  border:1px solid #bdebd0;
+}
+
+.gps-status-box.offline{
+  background:#fff9eb;
+  border-color:#f8df9b;
+}
+
+.gps-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
+
+.gps-left{
+  min-width:0;
+}
+
+.gps-label{
+  font-size:9px;
+  font-weight:950;
+  color:#087c42;
+}
+
+.gps-status-box.offline .gps-label{
+  color:#a16207;
+}
+
+.gps-value{
+  margin-top:4px;
+  font-size:10px;
+  color:#476052;
+  font-weight:700;
+  line-height:1.45;
+  word-break:break-word;
+}
+
+.gps-live-dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#16a34a;
+  box-shadow:0 0 0 5px rgba(22,163,74,.12);
+  flex:none;
+  animation:pulse 1.7s infinite;
+}
+
+@keyframes pulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.18)}
+}
+
+/* ================= PROGRESS ================= */
+
+.progress-wrap{
+  margin-top:13px;
+}
+
+.progress-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+.progress-title span:first-child{
+  font-size:9px;
+  font-weight:900;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+.progress-title span:last-child{
+  font-size:9px;
+  font-weight:900;
+  color:var(--green2);
+}
+
+.progress-track{
+  height:6px;
+  border-radius:999px;
+  background:#e9efeb;
+  overflow:hidden;
+}
+
+.progress-fill{
+  height:100%;
+  border-radius:999px;
+  background:linear-gradient(90deg,#087c42,#14b866);
+  transition:width .3s ease;
+}
+
+/* ================= TRACKING BUTTONS ================= */
+
+.tracking-section{
+  margin-top:13px;
+  padding-top:13px;
+  border-top:1px solid #edf1ee;
+}
+
+.tracking-title{
+  font-size:9px;
+  font-weight:950;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+.tracking-btns{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:5px;
+}
+
+.tracking-btn{
+  min-height:48px;
+  border:1px solid #e2e9e5;
+  background:#fff;
+  border-radius:10px;
+  padding:5px 3px;
+  cursor:pointer;
+  font-size:8px;
+  font-weight:850;
+  color:#52615a;
+  line-height:1.2;
+  transition:.18s;
+}
+
+.tracking-btn span{
+  display:block;
+  font-size:15px;
+  margin-bottom:3px;
+}
+
+.tracking-btn:active{
+  transform:scale(.95);
+}
+
+.tracking-btn.active{
+  background:var(--green);
+  color:#fff;
+  border-color:var(--green);
+  box-shadow:0 5px 12px rgba(11,159,85,.16);
+}
+
+.tracking-btn.done{
+  background:#e9f9f0;
+  color:#087c42;
+  border-color:#cdeedb;
+}
+
+/* ================= MAIN ACTIONS ================= */
+
+.action-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:7px;
+  margin-top:11px;
+}
+
+.action-btn{
+  min-height:42px;
+  border:0;
+  border-radius:11px;
+  padding:9px 8px;
+  font-size:10px;
+  font-weight:900;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  transition:.18s;
+}
+
+.action-btn:active{
+  transform:scale(.97);
+}
+
+.btn-track{
+  background:#eaf2ff;
+  color:#1d4ed8;
+}
+
+.btn-call{
+  background:#eaf8f0;
+  color:#087c42;
+}
+
+.btn-whatsapp{
+  background:#eaf9ef;
+  color:#15803d;
+}
+
+.btn-map{
+  background:#fff5e5;
+  color:#b45309;
+}
+
+.btn-enable{
+  background:#0b9f55;
+  color:#fff;
+}
+
+.btn-disable{
+  background:#fff0f0;
+  color:#dc2626;
+}
+
+.btn-delete{
+  background:#f7f7f7;
+  color:#b91c1c;
+  border:1px solid #eee;
+}
+
+.action-btn:disabled{
+  opacity:.42;
+  cursor:not-allowed;
+  transform:none;
+}
+
+/* ================= EMPTY ================= */
+
+.empty-state{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:19px;
+  padding:45px 20px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+.empty-icon{
+  width:60px;
+  height:60px;
+  border-radius:20px;
+  background:var(--green3);
+  display:grid;
+  place-items:center;
+  margin:0 auto 13px;
+  font-size:28px;
+}
+
+.empty-state h3{
+  font-size:16px;
+  font-weight:950;
+}
+
+.empty-state p{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.5;
+}
+
+/* ================= LOADING ================= */
+
+.loading{
+  padding:45px 20px;
+  text-align:center;
+  background:#fff;
+  border-radius:19px;
+  border:1px solid var(--border);
+}
+
+.spinner{
+  width:34px;
+  height:34px;
+  border:3px solid #dfe8e3;
+  border-top-color:var(--green);
+  border-radius:50%;
+  animation:spin .75s linear infinite;
+  margin:0 auto 12px;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+.loading p{
+  font-size:11px;
+  color:var(--muted);
+  font-weight:700;
+}
+
+/* ================= TOAST ================= */
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:18px;
+  transform:translate(-50%,20px);
+  width:min(92%,390px);
+  background:#10231a;
+  color:#fff;
+  padding:12px 14px;
+  border-radius:13px;
+  font-size:11px;
+  font-weight:800;
+  text-align:center;
+  box-shadow:0 12px 35px rgba(0,0,0,.2);
+  opacity:0;
+  pointer-events:none;
+  z-index:9999;
+  transition:.25s;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translate(-50%,0);
+}
+
+/* ================= MAP MODAL ================= */
+
+.map-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(8,20,14,.72);
+  backdrop-filter:blur(7px);
+  -webkit-backdrop-filter:blur(7px);
+  z-index:5000;
+  display:none;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.map-modal.show{
+  display:flex;
+}
+
+.map-sheet{
+  width:min(700px,100%);
+  height:min(82vh,700px);
+  background:#fff;
+  border-radius:24px 24px 0 0;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 -15px 50px rgba(0,0,0,.25);
+}
+
+.map-head{
+  min-height:62px;
+  padding:12px 15px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  border-bottom:1px solid var(--border);
+}
+
+.map-title{
+  font-size:14px;
+  font-weight:950;
+}
+
+.map-sub{
+  margin-top:3px;
+  font-size:9px;
+  color:var(--muted);
+}
+
+.close-map{
+  width:36px;
+  height:36px;
+  border:0;
+  border-radius:11px;
+  background:#f2f5f3;
+  cursor:pointer;
+  font-size:17px;
+}
+
+.map-body{
+  flex:1;
+  background:#e9efeb;
+  position:relative;
+}
+
+#partnerMap{
+  width:100%;
+  height:100%;
+}
+
+.map-actions{
+  padding:10px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  border-top:1px solid var(--border);
+}
+
+.map-action{
+  min-height:42px;
+  border:0;
+  border-radius:11px;
+  background:var(--green);
+  color:#fff;
+  font-size:10px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.map-action.secondary{
+  background:#eef5f1;
+  color:#087c42;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:800px){
+
+  main{
+    padding:13px;
+  }
+
+  .pickups-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+
+/* =========================================================
+   PREMIUM LOGIN SCREEN / MOBILE UX
+========================================================= */
+.login-logo-wrap{
+  width:82px;
+  height:82px;
+  margin:0 auto 10px;
+  border-radius:23px;
+  padding:6px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(145deg,#effbf4,#ffffff);
+  border:1px solid #d7eee0;
+  box-shadow:0 12px 28px rgba(11,159,85,.12);
+}
+
+.login-logo{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:17px;
+}
+
+.login-brand{
+  text-align:center;
+  color:var(--green2);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:1px;
+  margin-bottom:3px;
+}
+
+.login-title{
+  text-align:center;
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+#loginSection{
+  width:min(430px,100%);
+  margin-left:auto;
+  margin-right:auto;
+  padding:22px 18px 18px;
+  border-radius:24px;
+  box-shadow:0 18px 50px rgba(16,35,26,.11);
+}
+
+#loginSection .input-sub{
+  text-align:center;
+  max-width:350px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.5;
+}
+
+#loginSection .auth-input{
+  height:47px;
+  border-radius:13px;
+}
+
+#loginSection .load-btn{
+  height:47px;
+  border-radius:13px;
+  font-size:11px;
+}
+
+/* Logged-out mode: clean app-style login screen with no scrolling */
+body.logged-out{
+  min-height:100svh;
+  height:100svh;
+  overflow:hidden;
+}
+
+body.logged-out main{
+  min-height:calc(100svh - 68px);
+  height:calc(100svh - 68px);
+  padding:12px 14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+body.logged-out .hero,
+body.logged-out #loggedInSection,
+body.logged-out #notificationSection,
+body.logged-out #statsSection,
+body.logged-out #pickupSectionHead,
+body.logged-out #pickupsGrid{
+  display:none !important;
+}
+
+body.logged-out #loginSection{
+  margin:0 auto;
+  flex:none;
+}
+
+body.logged-in{
+  overflow-x:hidden;
+}
+
+@media(max-width:600px){
+  .header-inner{
+    min-height:62px;
+    padding:8px 11px;
+  }
+
+  .logo{
+    width:38px;
+    height:38px;
+    border-radius:11px;
+  }
+
+  .brand-name{
+    font-size:13px;
+  }
+
+  .brand-sub{
+    font-size:8px;
+  }
+
+  .partner-badge{
+    max-width:105px;
+    padding:7px 9px;
+    font-size:8px;
+  }
+
+  .refresh-btn{
+    width:34px;
+    height:34px;
+    border-radius:10px;
+  }
+
+  body.logged-out main{
+    min-height:calc(100svh - 62px);
+    height:calc(100svh - 62px);
+    padding:10px;
+  }
+
+  #loginSection{
+    width:min(390px,100%);
+    padding:18px 14px 14px;
+    border-radius:21px;
+  }
+
+  .login-logo-wrap{
+    width:68px;
+    height:68px;
+    border-radius:19px;
+    margin-bottom:8px;
+  }
+
+  .login-title{
+    font-size:20px;
+  }
+
+  #loginSection .input-sub{
+    font-size:9px;
+    margin-bottom:11px;
+  }
+
+  #loginSection .auth-input,
+  #loginSection .load-btn{
+    height:43px;
+  }
+
+  .join-card{
+    margin-top:11px;
+    padding:10px;
+    border-radius:12px;
+  }
+
+  .join-title{
+    font-size:9px;
+  }
+
+  .join-text{
+    font-size:8.5px;
+    line-height:1.45;
+  }
+
+  .join-call{
+    min-height:34px;
+    margin-top:8px;
+    font-size:9px;
+  }
+}
+
+@media(max-width:360px){
+  #loginSection{
+    padding:15px 12px 12px;
+  }
+
+  .login-logo-wrap{
+    width:58px;
+    height:58px;
+  }
+
+  .login-title{
+    font-size:18px;
+  }
+
+  #loginSection .input-sub{
+    font-size:8px;
+  }
+
+  .join-card{
+    display:none;
+  }
+}
+@media(max-width:600px){
+
+  .header-inner{
+    min-height:60px;
+    padding:8px 12px;
+  }
+
+  .logo{
+    width:37px;
+    height:37px;
+    border-radius:11px;
+  }
+
+  .brand-name{
+    font-size:14px;
+  }
+
+  .brand-sub{
+    font-size:8px;
+  }
+
+  .partner-badge{
+    max-width:115px;
+    padding:7px 9px;
+    font-size:8px;
+  }
+
+  .refresh-btn{
+    width:35px;
+    height:35px;
+  }
+
+  main{
+    padding:10px;
+  }
+
+  .hero{
+    border-radius:18px;
+    padding:18px;
+  }
+
+  .hero h1{
+    font-size:21px;
+  }
+
+  .hero p{
+    font-size:10px;
+  }
+
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+    gap:7px;
+  }
+
+  .stat-card{
+    padding:11px;
+    border-radius:13px;
+  }
+
+  .stat-value{
+    font-size:21px;
+  }
+
+  .stat-label{
+    font-size:8px;
+  }
+
+  .input-group{
+    flex-direction:column;
+  }
+
+  .load-btn{
+    width:100%;
+  }
+
+  .pickup-card{
+    padding:13px;
+    border-radius:17px;
+  }
+
+  .customer-name{
+    font-size:15px;
+  }
+
+  .card-details{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .tracking-btns{
+    grid-template-columns:repeat(5,1fr);
+  }
+
+  .tracking-btn{
+    min-height:44px;
+    font-size:7px;
+  }
+
+  .tracking-btn span{
+    font-size:13px;
+  }
+
+  .action-btn{
+    min-height:40px;
+    font-size:9px;
+  }
+
+  .map-sheet{
+    height:86vh;
+    border-radius:22px 22px 0 0;
+  }
+}
+
+@media(max-width:360px){
+
+  .brand-sub{
+    display:none;
+  }
+
+  .partner-badge{
+    max-width:90px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  .card-details{
+    gap:5px;
+  }
+
+  .detail-item{
+    padding:7px;
+  }
+
+  .detail-value{
+    font-size:10px;
+  }
+
+  .tracking-btn{
+    min-height:42px;
+    padding:3px 1px;
+  }
+
+  .tracking-btn span{
+    font-size:12px;
+  }
+}
+
+/* =========================================================
+   PARTNER LOGIN - PREMIUM PASSWORD + POPUP UX
+========================================================= */
+.password-wrap{
+  position:relative;
+  width:100%;
+}
+.password-wrap .auth-input{
+  width:100%;
+  padding-right:72px !important;
+}
+.password-toggle{
+  position:absolute;
+  right:9px;
+  top:50%;
+  transform:translateY(-50%);
+  border:0;
+  background:transparent;
+  color:var(--green2);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.3px;
+  cursor:pointer;
+  padding:8px 5px;
+  z-index:3;
+}
+.password-toggle:active{transform:translateY(-50%) scale(.96);}
+.partner-popup-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  background:rgba(7,25,16,.56);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .2s ease,visibility .2s ease;
+}
+.partner-popup-backdrop.show{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+.partner-popup{
+  width:min(390px,100%);
+  background:#fff;
+  border:1px solid #e3eee8;
+  border-radius:24px;
+  padding:24px 20px 19px;
+  text-align:center;
+  box-shadow:0 28px 80px rgba(0,0,0,.25);
+  transform:translateY(14px) scale(.97);
+  transition:transform .22s ease;
+}
+.partner-popup-backdrop.show .partner-popup{
+  transform:translateY(0) scale(1);
+}
+.partner-popup-icon{
+  width:58px;
+  height:58px;
+  margin:0 auto 12px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#fff0ef;
+  color:#d83f35;
+  border:7px solid #fff8f7;
+  font-size:26px;
+  font-weight:950;
+}
+.partner-popup-title{
+  color:var(--dark);
+  font-size:19px;
+  font-weight:950;
+  line-height:1.2;
+}
+.partner-popup-text{
+  max-width:315px;
+  margin:8px auto 17px;
+  color:#64736b;
+  font-size:12px;
+  font-weight:650;
+  line-height:1.55;
+}
+.partner-popup-btn{
+  width:100%;
+  min-height:44px;
+  border:0;
+  border-radius:13px;
+  background:linear-gradient(135deg,var(--green),var(--green2));
+  color:#fff;
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.4px;
+  cursor:pointer;
+  box-shadow:0 9px 22px rgba(11,159,85,.20);
+}
+.partner-popup-btn:active{transform:scale(.985);}
+@media(max-width:600px){
+  .partner-popup-backdrop{padding:12px;}
+  .partner-popup{width:min(360px,calc(100vw - 24px));padding:21px 16px 16px;border-radius:21px;}
+  .partner-popup-icon{width:52px;height:52px;font-size:23px;margin-bottom:10px;}
+  .partner-popup-title{font-size:17px;}
+  .partner-popup-text{font-size:11px;margin-bottom:14px;}
+  .partner-popup-btn{min-height:42px;}
+}
+@media(max-width:360px){
+  .partner-popup{padding:18px 14px 14px;}
+  .partner-popup-icon{width:47px;height:47px;font-size:21px;}
+}
+</style>
+</head>
+
+<body class="logged-out">
+
+<header>
+  <div class="header-inner">
+
+    <div class="brand">
+
+      <img
+        src="plogo.jpeg"
+        class="logo"
+        alt="COVAI SCRAP HUB"
+        onerror="this.style.display='none'"
+      >
+
+      <div class="brand-text">
+        <div class="brand-name">♻️ COVAI SCRAP HUB</div>
+        <div class="brand-sub">PARTNER DELIVERY PANEL</div>
+      </div>
+
+    </div>
+
+    <div class="header-right">
+
+      <div class="partner-badge">
+        <span class="partner-dot"></span>
+        <span id="partnerBadge">PARTNER</span>
+      </div>
+
+      <button
+        class="refresh-btn"
+        onclick="refreshPartner()"
+        title="Refresh"
+      >
+        ↻
+      </button>
+
+      <button
+        id="logoutBtn"
+        class="refresh-btn"
+        onclick="partnerLogout()"
+        title="Logout"
+        style="display:none;color:#dc2626;"
+      >
+        ⇥
+      </button>
+
+    </div>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <h1>Partner Dashboard 🚚</h1>
+
+    <p>
+      Manage your assigned scrap pickups, customer contact,
+      GPS sharing and pickup status from one place.
+    </p>
+
+    <div class="hero-status">
+      🟢 Partner system online
+    </div>
+
+  </section>
+
+
+  <!-- PARTNER LOGIN -->
+
+  <section
+    class="partner-input-card"
+    id="loginSection"
+  >
+
+    <div class="login-logo-wrap">
+      <img
+        src="plogo.jpeg"
+        class="login-logo"
+        alt="COVAI SCRAP HUB"
+        onerror="this.style.display='none'"
+      >
+    </div>
+
+    <div class="login-brand">COVAI SCRAP HUB</div>
+
+    <div class="input-title login-title">
+      Partner Login
+    </div>
+
+    <div class="input-sub">
+      Login with the email ID and password created for you by COVAI SCRAP HUB.
+      Your assigned pickups will load automatically after login.
+    </div>
+
+    <div style="display:grid;gap:9px;">
+
+      <input
+        id="partnerEmail"
+        class="auth-input"
+        type="email"
+        autocomplete="email"
+        placeholder="Partner Email ID"
+      >
+
+      <div class="password-wrap">
+        <input
+          id="partnerPassword"
+          class="auth-input"
+          type="password"
+          autocomplete="current-password"
+          placeholder="Password"
+        >
+        <button
+          type="button"
+          class="password-toggle"
+          id="togglePartnerPassword"
+          aria-label="Show password"
+        >SHOW</button>
+      </div>
+
+      <button
+        class="load-btn"
+        id="loginBtn"
+        type="button"
+        onclick="partnerLogin()"
+      >
+        🔐 LOGIN TO PARTNER PANEL
+      </button>
+
+    </div>
+
+    <div
+      id="loginMessage"
+      class="login-message"
+    ></div>
+
+    <div class="join-card">
+
+      <div class="join-title">
+        🚚 Interested in joining COVAI SCRAP HUB?
+      </div>
+
+      <div class="join-text">
+        Call <strong>+91 95142 52104</strong> immediately.
+        We will create your partner account and you can start receiving scrap pickup assignments.
+      </div>
+
+      <a
+        class="join-call"
+        href="tel:+919514252104"
+      >
+        📞 CALL +91 95142 52104
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOGIN ERROR / STATUS POPUP -->
+  <div class="partner-popup-backdrop" id="partnerAlertPopup" aria-hidden="true">
+    <div class="partner-popup" role="alertdialog" aria-modal="true" aria-labelledby="partnerPopupTitle">
+      <div class="partner-popup-icon" id="partnerPopupIcon">!</div>
+      <div class="partner-popup-title" id="partnerPopupTitle">Login failed</div>
+      <div class="partner-popup-text" id="partnerPopupText">Please check your details and try again.</div>
+      <button class="partner-popup-btn" id="partnerPopupOk" type="button">OK, TRY AGAIN</button>
+    </div>
+  </div>
+
+
+  <!-- LOGGED-IN PARTNER -->
+
+  <section
+    class="partner-input-card"
+    id="loggedInSection"
+    style="display:none;"
+  >
+
+    <div class="logged-row">
+
+      <div class="logged-info">
+        <div
+          class="input-title"
+          id="loggedPartnerName"
+        >
+          👤 Partner
+        </div>
+        <div
+          class="input-sub"
+          id="loggedPartnerEmail"
+          style="margin-bottom:0;"
+        >
+          Partner account
+        </div>
+      </div>
+
+      <button
+        class="logout-main"
+        type="button"
+        onclick="partnerLogout()"
+      >
+        LOGOUT
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- PUSH NOTIFICATIONS -->
+
+  <section
+    class="partner-input-card"
+    id="notificationSection"
+    style="margin-top:14px;"
+  >
+
+    <div class="input-title">
+      🔔 Partner Notifications
+    </div>
+
+    <div class="input-sub">
+      Enable push notifications to receive new pickup and status updates.
+    </div>
+
+    <button
+      id="partnerNotificationBtn"
+      class="load-btn"
+      type="button"
+      onclick="enablePartnerNotifications()"
+      style="margin-top:12px;"
+    >
+      🔔 Enable Notifications
+    </button>
+
+    <div
+      id="partnerNotificationStatus"
+      style="margin-top:9px;font-size:12px;font-weight:700;color:#708078;"
+    >
+      Notifications are currently not enabled.
+    </div>
+
+  </section>
+
+
+  <!-- STATS -->
+
+  <div
+    class="stats"
+    id="statsSection"
+    style="display:none"
+  >
+
+    <div class="stat-card">
+      <div class="stat-icon">📦</div>
+      <div class="stat-label">Total Assigned</div>
+      <div
+        class="stat-value"
+        id="totalCount"
+      >
+        0
+      </div>
+    </div>
+
+
+    <div class="stat-card">
+      <div class="stat-icon">🚛</div>
+      <div class="stat-label">Active</div>
+      <div
+        class="stat-value"
+        id="activeCount"
+      >
+        0
+      </div>
+    </div>
+
+
+    <div class="stat-card">
+      <div class="stat-icon">📍</div>
+      <div class="stat-label">Live GPS</div>
+      <div
+        class="stat-value"
+        id="liveCount"
+      >
+        0
+      </div>
+    </div>
+
+
+    <div class="stat-card">
+      <div class="stat-icon">✓</div>
+      <div class="stat-label">Completed</div>
+      <div
+        class="stat-value"
+        id="completedCount"
+      >
+        0
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- SECTION TITLE -->
+
+  <div
+    class="section-head"
+    id="pickupSectionHead"
+    style="display:none"
+  >
+
+    <div class="section-title">
+      My Assigned Pickups
+    </div>
+
+    <div
+      class="section-count"
+      id="sectionCount"
+    >
+      0 Pickups
+    </div>
+
+  </div>
+
+
+  <!-- PICKUPS -->
+
+  <div
+    id="pickupsGrid"
+    class="pickups-grid"
+  >
+
+    <div class="empty-state">
+
+      <div class="empty-icon">
+        🚚
+      </div>
+
+      <h3>
+        Welcome Partner!
+      </h3>
+
+      <p>
+        Login with your partner email and password to view
+        your assigned pickups.
+      </p>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<!-- MAP MODAL -->
+
+<div
+  id="mapModal"
+  class="map-modal"
+  onclick="closeMapOutside(event)"
+>
+
+  <div class="map-sheet">
+
+    <div class="map-head">
+
+      <div>
+        <div
+          class="map-title"
+          id="mapTitle"
+        >
+          Customer Location
+        </div>
+
+        <div
+          class="map-sub"
+          id="mapSub"
+        >
+          Pickup location
+        </div>
+      </div>
+
+      <button
+        class="close-map"
+        onclick="closeMap()"
+      >
+        ✕
+      </button>
+
+    </div>
+
+    <div class="map-body">
+
+      <iframe
+        id="mapFrame"
+        style="
+          width:100%;
+          height:100%;
+          border:0;
+          display:none;
+        "
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div
+        id="mapFallback"
+        style="
+          width:100%;
+          height:100%;
+          display:grid;
+          place-items:center;
+          padding:30px;
+          text-align:center;
+          color:#718078;
+          font-size:12px;
+          font-weight:700;
+        "
+      >
+        📍 Customer location not available.
+      </div>
+
+    </div>
+
+    <div class="map-actions">
+
+      <button
+        class="map-action"
+        onclick="openGoogleMaps()"
+      >
+        🗺️ Open Google Maps
+      </button>
+
+      <button
+        class="map-action secondary"
+        onclick="closeMap()"
+      >
+        Done
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div
+  id="toast"
+  class="toast"
+></div>
+
+
+<script type="module">
+
+import {
+  initializeApp
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+
+import {
+  getDatabase,
+  ref,
+  get,
+  onValue,
+  update,
+  remove
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
+import {
+  getMessaging,
+  getToken,
+  onMessage
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js";
+
+
+/* =========================================================
+   FIREBASE
+========================================================= */
+
+const firebaseConfig = {
+
+  apiKey:
+    "AIzaSyApJhYmo0pHNqVD0XIyOlQDqDzACztPdHA",
+
+  authDomain:
+    "covai-scrap-hub.firebaseapp.com",
+
+  databaseURL:
+    "https://covai-scrap-hub-default-rtdb.firebaseio.com",
+
+  projectId:
+    "covai-scrap-hub",
+
+  storageBucket:
+    "covai-scrap-hub.firebasestorage.app",
+
+  messagingSenderId:
+    "979133721874",
+
+  appId:
+    "1:979133721874:web:c5829bb8dbf5270c0917cb",
+
+  measurementId:
+    "G-P3PTSBHWMF"
+
+};
+
+
+const app = initializeApp(firebaseConfig);
+
+const db = getDatabase(app);
+const auth = getAuth(app);
+
+const messaging = getMessaging(app);
+
+const VAPID_KEY =
+  "BObXaxevMK2LMk9aDeEtJ2yNM2k-V53pVht_woVyjLFTCwML5wBvN29Swx1WKaft4u6PfQ0tH0NpAWRnBUqFhRE";
+
+
+/* =========================================================
+   STATE
+========================================================= */
+
+let allPickups = [];
+
+let partnerPickups = [];
+
+let partnerName = "";
+let currentPartnerUid = "";
+let currentPartnerProfile = {};
+let authReady = false;
+
+const gpsWatchers = {};
+
+let currentMapPickup = null;
+
+
+/* =========================================================
+   PARTNER PUSH NOTIFICATIONS
+========================================================= */
+
+async function enablePartnerNotifications(){
+
+  const button =
+    document.getElementById(
+      "partnerNotificationBtn"
+    );
+
+  const status =
+    document.getElementById(
+      "partnerNotificationStatus"
+    );
+
+  try{
+
+    if(!("Notification" in window)){
+
+      throw new Error(
+        "This browser does not support notifications."
+      );
+
+    }
+
+    if(!("serviceWorker" in navigator)){
+
+      throw new Error(
+        "Service Worker is not supported."
+      );
+
+    }
+
+    if(!window.isSecureContext){
+
+      throw new Error(
+        "Notifications require HTTPS."
+      );
+
+    }
+
+    if(button){
+      button.disabled = true;
+      button.textContent = "Enabling...";
+    }
+
+    const permission =
+      await Notification.requestPermission();
+
+    if(permission !== "granted"){
+      throw new Error(
+        "Notification permission was not granted."
+      );
+    }
+
+    const registration =
+      await navigator.serviceWorker.register(
+        "/firebase-messaging-sw.js",
+        { scope: "/" }
+      );
+
+    await navigator.serviceWorker.ready;
+
+    const token =
+      await getToken(
+        messaging,
+        {
+          vapidKey: VAPID_KEY,
+          serviceWorkerRegistration: registration
+        }
+      );
+
+    if(!token){
+      throw new Error(
+        "FCM token was not generated."
+      );
+    }
+
+    const safeToken =
+      encodeURIComponent(token);
+
+    await update(
+      ref(
+        db,
+        `notificationTokens/${safeToken}`
+      ),
+      {
+        token: token,
+        enabled: true,
+        role: "partner",
+        partnerName: partnerName || "",
+        partnerUid: currentPartnerUid || "",
+        partnerEmail: auth.currentUser?.email || "",
+        platform: "web",
+        browser: navigator.userAgent,
+        updatedAt: Date.now(),
+        createdAt: Date.now()
+      }
+    );
+
+    localStorage.setItem(
+      "csh_partner_notifications",
+      "true"
+    );
+
+    if(button){
+      button.disabled = false;
+      button.textContent =
+        "✓ Notifications Enabled";
+    }
+
+    if(status){
+      status.textContent =
+        "✅ Push notifications are enabled.";
+      status.style.color = "#087536";
+    }
+
+    showToast(
+      "🔔 Notifications enabled"
+    );
+
+    console.log(
+      "Partner FCM token:",
+      token
+    );
+
+  }
+  catch(error){
+
+    console.error(
+      "Partner notification error:",
+      error
+    );
+
+    if(button){
+      button.disabled = false;
+      button.textContent =
+        "🔔 Enable Notifications";
+    }
+
+    if(status){
+      status.textContent =
+        "❌ " + (error.message || "Notification setup failed.");
+      status.style.color = "#dc2626";
+    }
+
+    showToast(
+      "❌ " + (error.message || "Notification setup failed.")
+    );
+
+  }
+
+}
+
+window.enablePartnerNotifications =
+  enablePartnerNotifications;
+
+
+/* =========================================================
+   FOREGROUND PUSH HANDLER
+========================================================= */
+
+onMessage(
+  messaging,
+  function(payload){
+
+    console.log(
+      "📩 Partner foreground notification:",
+      payload
+    );
+
+    const notification =
+      payload.notification || {};
+
+    const title =
+      notification.title ||
+      payload.data?.title ||
+      "COVAI SCRAP HUB";
+
+    const body =
+      notification.body ||
+      payload.data?.body ||
+      "You have a new pickup update.";
+
+    showToast(
+      "🔔 " + title + " — " + body
+    );
+
+  }
+);
+
+
+/* =========================================================
+   RESTORE NOTIFICATION UI STATE
+========================================================= */
+
+function restorePartnerNotificationState(){
+
+  const button =
+    document.getElementById(
+      "partnerNotificationBtn"
+    );
+
+  const status =
+    document.getElementById(
+      "partnerNotificationStatus"
+    );
+
+  if(
+    localStorage.getItem(
+      "csh_partner_notifications"
+    ) === "true" &&
+    typeof Notification !== "undefined" &&
+    Notification.permission === "granted"
+  ){
+
+    if(button){
+      button.textContent =
+        "✓ Notifications Enabled";
+    }
+
+    if(status){
+      status.textContent =
+        "✅ Push notifications are enabled.";
+      status.style.color = "#087536";
+    }
+
+  }
+
+}
+
+
+/* =========================================================
+   ESCAPE HTML
+========================================================= */
+
+function esc(value){
+
+  return String(value ?? "")
+    .replace(/[&<>"']/g, function(m){
+
+      return {
+
+        "&":"&amp;",
+        "<":"&lt;",
+        ">":"&gt;",
+        '"':"&quot;",
+        "'":"&#039;"
+
+      }[m];
+
+    });
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+function num(value){
+
+  const n = Number(value);
+
+  return Number.isFinite(n) ? n : 0;
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+function getPhone(p){
+
+  return (
+    p?.phone ||
+    p?.mobile ||
+    p?.customerPhone ||
+    p?.customerMobile ||
+    p?.phoneNumber ||
+    p?.customer?.phone ||
+    p?.customer?.mobile ||
+    ""
+  );
+
+}
+
+
+function cleanPhone(phone){
+
+  return String(phone || "")
+    .replace(/[^\d+]/g,"");
+
+}
+
+
+/* =========================================================
+   CUSTOMER NAME
+========================================================= */
+
+function getCustomerName(p){
+
+  return (
+    p?.customerName ||
+    p?.customer ||
+    p?.name ||
+    p?.customer?.name ||
+    "Customer"
+  );
+
+}
+
+
+/* =========================================================
+   ADDRESS
+========================================================= */
+
+function getAddress(p){
+
+  return (
+    p?.address ||
+    p?.pickupAddress ||
+    p?.customerAddress ||
+    p?.location ||
+    p?.customer?.address ||
+    "Address not provided"
+  );
+
+}
+
+
+/* =========================================================
+   PARTNER NAME
+========================================================= */
+
+function getAssignedPartnerName(p){
+
+  if(!p) return "";
+
+  const candidates = [
+
+    p.partnerName,
+
+    p.partner,
+
+    p.assignedPartnerName,
+
+    p.assignedPartner?.name,
+
+    p.assignedPartner?.partnerName,
+
+    p.partnerDetails?.name,
+
+    p.partnerDetails?.partnerName,
+
+    p.partner?.name,
+
+    p.partner?.partnerName
+
+  ];
+
+  for(const value of candidates){
+
+    if(
+      value !== null &&
+      value !== undefined &&
+      String(value).trim()
+    ){
+
+      return String(value).trim();
+
+    }
+
+  }
+
+  return "";
+
+}
+
+
+/* =========================================================
+   CUSTOMER GPS
+========================================================= */
+
+function getCustomerGPS(p){
+
+  if(!p) return null;
+
+  const sources = [
+
+    p.customerGPS,
+
+    p.customerLocation,
+
+    {
+      latitude:
+        p.latitude ??
+        p.customerLatitude ??
+        p.pickupLatitude,
+
+      longitude:
+        p.longitude ??
+        p.customerLongitude ??
+        p.pickupLongitude
+    }
+
+  ];
+
+  for(const g of sources){
+
+    if(!g) continue;
+
+    const lat =
+      Number(
+        g.latitude ??
+        g.lat
+      );
+
+    const lng =
+      Number(
+        g.longitude ??
+        g.lng ??
+        g.lon
+      );
+
+    if(
+      Number.isFinite(lat) &&
+      Number.isFinite(lng) &&
+      Math.abs(lat) <= 90 &&
+      Math.abs(lng) <= 180
+    ){
+
+      return {
+        latitude:lat,
+        longitude:lng
+      };
+
+    }
+
+  }
+
+  return null;
+
+}
+
+
+/* =========================================================
+   LOAD FIREBASE
+========================================================= */
+
+onValue(
+  ref(db,"pickupRequests"),
+
+  snap => {
+
+    const data =
+      snap.val() || {};
+
+    allPickups =
+      Object.entries(data)
+
+        .filter(
+          ([id,p]) =>
+            p &&
+            typeof p === "object"
+        )
+
+        .map(
+          ([id,p]) => ({
+            ...p,
+            id
+          })
+        );
+
+
+    console.log(
+      "Firebase pickupRequests:",
+      allPickups.length
+    );
+
+
+    if(currentPartnerUid){
+
+      filterAndRender();
+
+    }
+
+  },
+
+  error => {
+
+    console.error(
+      "Firebase read error:",
+      error
+    );
+
+
+    document.getElementById(
+      "pickupsGrid"
+    ).innerHTML = `
+
+      <div class="empty-state">
+
+        <div class="empty-icon">
+          ⚠️
+        </div>
+
+        <h3>
+          Unable to load pickups
+        </h3>
+
+        <p>
+          Firebase could not read pickupRequests.
+        </p>
+
+        <p style="
+          margin-top:10px;
+          font-size:9px;
+          word-break:break-word;
+        ">
+          ${esc(error?.message || "Permission denied")}
+        </p>
+
+      </div>
+
+    `;
+
+  }
+
+);
+
+
+/* =========================================================
+   PARTNER AUTHENTICATION
+========================================================= */
+
+function showLoginMessage(message, type="error"){
+
+  const box = document.getElementById("loginMessage");
+
+  if(!box) return;
+
+  box.style.display = "block";
+  box.style.background = type === "success" ? "#ecfdf3" : "#fff1f1";
+  box.style.color = type === "success" ? "#087c42" : "#b91c1c";
+  box.textContent = message;
+
+}
+
+function clearLoginMessage(){
+
+  const box = document.getElementById("loginMessage");
+
+  if(box){
+    box.style.display = "none";
+    box.textContent = "";
+  }
+
+}
+
+function setLoginLoading(loading){
+
+  const button = document.getElementById("loginBtn");
+
+  if(!button) return;
+
+  button.disabled = loading;
+  button.textContent = loading
+    ? "LOGGING IN..."
+    : "🔐 LOGIN TO PARTNER PANEL";
+
+}
+
+window.partnerLogin = async function(){
+
+  const email =
+    document.getElementById("partnerEmail")?.value.trim().toLowerCase() || "";
+
+  const password =
+    document.getElementById("partnerPassword")?.value || "";
+
+  clearLoginMessage();
+
+  if(!email || !password){
+
+    showLoginMessage("Please enter your partner email ID and password.");
+    showPartnerPopup("Missing login details","Please enter your partner email ID and password.","warning");
+
+    return;
+
+  }
+
+  if(!email.includes("@")){
+
+    showLoginMessage("Please enter a valid email ID.");
+    showPartnerPopup("Invalid email ID","Please enter a valid partner email address.","warning");
+    return;
+
+  }
+
+  try{
+
+    setLoginLoading(true);
+
+    if(!authReady){
+      await new Promise(resolve => {
+        const started = Date.now();
+        const timer = setInterval(() => {
+          if(authReady || Date.now() - started > 5000){
+            clearInterval(timer);
+            resolve();
+          }
+        }, 50);
+      });
+    }
+
+    const credential = await signInWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
+
+    const signedInUser = credential?.user || auth.currentUser;
+
+    if(!signedInUser){
+      throw new Error("Firebase login completed, but the partner session was not created.");
+    }
+
+    // Load and validate the partner profile immediately. This prevents a
+    // successful Firebase login from appearing to do nothing.
+    await loadPartnerProfile(signedInUser.uid);
+
+    clearLoginMessage();
+    if(typeof window.showPartnerPopup === "function"){
+      window.showPartnerPopup(
+        "Login successful",
+        "Welcome to the COVAI SCRAP HUB Partner Panel.",
+        "success"
+      );
+    }
+
+  }
+  catch(error){
+
+    console.error("Partner login error:",error);
+
+    let message =
+      "Login failed. Please check your email ID and password.";
+
+    switch(error?.code){
+
+      case "auth/invalid-credential":
+      case "auth/invalid-login-credentials":
+      case "auth/user-not-found":
+      case "auth/wrong-password":
+        message = "Invalid email ID or password.";
+        break;
+
+      case "auth/user-disabled":
+        message = "Your partner account is disabled. Please contact COVAI SCRAP HUB.";
+        break;
+
+      case "auth/too-many-requests":
+        message = "Too many login attempts. Please wait and try again.";
+        break;
+
+      case "auth/network-request-failed":
+        message = "Network error. Check your internet connection and try again.";
+        break;
+
+      case "auth/operation-not-allowed":
+        message = "Email/password login is not enabled in Firebase Authentication.";
+        break;
+
+      default:
+        message = error?.message || message;
+
+    }
+
+    showLoginMessage(message);
+    if(typeof window.showPartnerPopup === "function" && !error?.code?.startsWith("auth/")){
+      window.showPartnerPopup("Partner profile problem", message, "error");
+    }
+    if(error?.code === "auth/user-not-found"){
+      showPartnerPopup("Email ID not found","No partner account was found for this email ID. Please contact COVAI SCRAP HUB.","error");
+    }else if(error?.code === "auth/invalid-email"){
+      showPartnerPopup("Invalid email ID","Please enter a valid partner email address.","warning");
+    }else if(error?.code === "auth/wrong-password"){
+      showPartnerPopup("Wrong password","The password you entered is incorrect. Please try again.","error");
+    }else if(error?.code === "auth/invalid-credential" || error?.code === "auth/invalid-login-credentials"){
+      showPartnerPopup("Wrong email or password","The email ID or password is incorrect. Please check both and try again.","error");
+    }else if(error?.code === "auth/too-many-requests"){
+      showPartnerPopup("Too many attempts","Please wait a little while before trying to log in again.","warning");
+    }else if(error?.code === "auth/network-request-failed"){
+      showPartnerPopup("Connection problem","Please check your internet connection and try again.","warning");
+    }else if(error?.code === "auth/user-disabled"){
+      showPartnerPopup("Account disabled","Your partner account is disabled. Please contact COVAI SCRAP HUB.","error");
+    }else{
+      showPartnerPopup("Login failed",message,"error");
+    }
+
+  }
+  finally{
+
+    setLoginLoading(false);
+
+  }
+
+};
+
+document.getElementById("partnerPassword")?.addEventListener("keydown", event => {
+  if(event.key === "Enter") window.partnerLogin();
+});
+
+document.getElementById("partnerEmail")?.addEventListener("keydown", event => {
+  if(event.key === "Enter") document.getElementById("partnerPassword")?.focus();
+});
+
+const partnerLoginForm = document.getElementById("partnerLoginForm");
+if(partnerLoginForm){
+  partnerLoginForm.addEventListener("submit", event => {
+    event.preventDefault();
+    window.partnerLogin();
+  });
+}
+
+window.partnerLogout = async function(){
+
+  try{
+
+    Object.keys(gpsWatchers).forEach(id => {
+
+      navigator.geolocation.clearWatch(gpsWatchers[id]);
+      delete gpsWatchers[id];
+
+    });
+
+    await signOut(auth);
+
+    showToast("Logged out successfully");
+
+  }
+  catch(error){
+
+    console.error("Logout error:",error);
+    showToast("❌ Logout failed: " + (error?.message || "Unknown error"));
+
+  }
+
+};
+
+async function loadPartnerProfile(uid){
+
+  const snapshot = await get(
+    ref(db,"partners/" + uid)
+  );
+
+  if(!snapshot.exists()){
+
+    await signOut(auth);
+
+    throw new Error(
+      "Partner profile not found. Please contact COVAI SCRAP HUB."
+    );
+
+  }
+
+  const profile = snapshot.val() || {};
+
+  const role =
+    String(profile.role || "partner").trim().toLowerCase();
+
+  const accountStatus =
+    String(profile.status || "active").trim().toLowerCase();
+
+  if(role !== "partner"){
+
+    await signOut(auth);
+
+    throw new Error(
+      "This Firebase account is not registered as a partner account."
+    );
+
+  }
+
+  if(
+    accountStatus === "inactive" ||
+    accountStatus === "disabled" ||
+    accountStatus === "blocked" ||
+    accountStatus === "suspended"
+  ){
+
+    await signOut(auth);
+
+    throw new Error(
+      "Your partner account is currently inactive. Please contact COVAI SCRAP HUB."
+    );
+
+  }
+
+  currentPartnerUid = uid;
+  currentPartnerProfile = profile;
+  partnerName = String(profile.name || "Partner").trim() || "Partner";
+
+  const loginSection = document.getElementById("loginSection");
+  const loggedInSection = document.getElementById("loggedInSection");
+  const logoutBtn = document.getElementById("logoutBtn");
+
+  if(loginSection) loginSection.style.display = "none";
+  if(loggedInSection) loggedInSection.style.display = "block";
+  if(logoutBtn) logoutBtn.style.display = "grid";
+  const notificationSection = document.getElementById("notificationSection");
+  if(notificationSection) notificationSection.style.display = "block";
+
+  document.body.classList.remove("logged-out");
+  document.body.classList.add("logged-in");
+
+  const nameEl = document.getElementById("loggedPartnerName");
+  const emailEl = document.getElementById("loggedPartnerEmail");
+
+  if(nameEl){
+    nameEl.textContent = "👤 " + partnerName;
+  }
+
+  if(emailEl){
+    emailEl.textContent = profile.email || auth.currentUser?.email || "Partner account";
+  }
+
+  document.getElementById("partnerBadge").textContent =
+    partnerName.toUpperCase();
+
+  document.getElementById("statsSection").style.display = "none";
+  document.getElementById("pickupSectionHead").style.display = "none";
+
+  filterAndRender();
+
+}
+
+onAuthStateChanged(auth, async user => {
+
+  authReady = true;
+
+  if(!user){
+
+    currentPartnerUid = "";
+    currentPartnerProfile = {};
+    partnerName = "";
+    partnerPickups = [];
+
+    Object.keys(gpsWatchers).forEach(id => {
+      navigator.geolocation.clearWatch(gpsWatchers[id]);
+      delete gpsWatchers[id];
+    });
+
+    document.getElementById("loginSection").style.display = "block";
+    document.getElementById("loggedInSection").style.display = "none";
+    document.getElementById("logoutBtn").style.display = "none";
+    document.getElementById("notificationSection").style.display = "none";
+    document.getElementById("partnerBadge").textContent = "PARTNER";
+    document.body.classList.remove("logged-in");
+    document.body.classList.add("logged-out");
+    document.getElementById("statsSection").style.display = "none";
+    document.getElementById("pickupSectionHead").style.display = "none";
+
+    return;
+
+  }
+
+  try{
+
+    if(currentPartnerUid !== user.uid){
+      await loadPartnerProfile(user.uid);
+    }
+
+  }
+  catch(error){
+
+    console.error("Partner profile error:",error);
+
+    document.getElementById("loginSection").style.display = "block";
+    document.getElementById("loggedInSection").style.display = "none";
+    document.getElementById("logoutBtn").style.display = "none";
+    document.getElementById("notificationSection").style.display = "none";
+    document.getElementById("partnerBadge").textContent = "PARTNER";
+    document.body.classList.remove("logged-in");
+    document.body.classList.add("logged-out");
+
+    showLoginMessage(
+      error?.message || "Unable to load your partner profile."
+    );
+
+  }
+
+});
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+function filterAndRender(){
+
+  if(!currentPartnerUid){
+
+    partnerPickups = [];
+    updateStats();
+    render();
+    return;
+
+  }
+
+  partnerPickups = allPickups.filter(p => {
+
+    const assignedUid = String(
+      p.assignedPartnerUid || ""
+    ).trim();
+
+    /* Primary identity: Firebase Auth UID assigned by admin. */
+    if(assignedUid){
+      return assignedUid === String(currentPartnerUid);
+    }
+
+    /* Backward compatibility for old assignments without UID. */
+    const assignedName =
+      getAssignedPartnerName(p).trim().toLowerCase();
+
+    return !!assignedName &&
+      assignedName === partnerName.trim().toLowerCase();
+
+  });
+
+  updateStats();
+  render();
+
+}
+
+
+/* =========================================================
+   REFRESH
+========================================================= */
+
+window.refreshPartner = function(){
+
+  showToast(
+    "Refreshing pickup data..."
+  );
+
+  if(currentPartnerUid){
+
+    filterAndRender();
+
+  }
+
+};
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+function updateStats(){
+
+  const stats =
+    document.getElementById(
+      "statsSection"
+    );
+
+  const head =
+    document.getElementById(
+      "pickupSectionHead"
+    );
+
+
+  if(!partnerPickups.length){
+
+    stats.style.display = "none";
+
+    head.style.display = "none";
+
+    return;
+
+  }
+
+
+  stats.style.display = "grid";
+
+  head.style.display = "flex";
+
+
+  document.getElementById(
+    "totalCount"
+  ).textContent =
+    partnerPickups.length;
+
+
+  document.getElementById(
+    "activeCount"
+  ).textContent =
+    partnerPickups.filter(
+      p =>
+        String(
+          p.status || ""
+        ).toLowerCase()
+        !== "completed"
+    ).length;
+
+
+  document.getElementById(
+    "liveCount"
+  ).textContent =
+    partnerPickups.filter(
+      p =>
+        p.partnerGPS &&
+        p.partnerGPS.enabled === true
+    ).length;
+
+
+  document.getElementById(
+    "completedCount"
+  ).textContent =
+    partnerPickups.filter(
+      p =>
+        String(
+          p.status || ""
+        ).toLowerCase()
+        === "completed"
+    ).length;
+
+
+  document.getElementById(
+    "sectionCount"
+  ).textContent =
+    `${partnerPickups.length} Pickup${
+      partnerPickups.length === 1 ? "" : "s"
+    }`;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+const statusStages = [
+
+  "pending",
+  "confirmed",
+  "on_the_way",
+  "picked_up",
+  "completed"
+
+];
+
+
+function normalizeStatus(status){
+
+  const s =
+    String(status || "")
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g,"_");
+
+
+  if(
+    s === "new" ||
+    s === "pending"
+  ) return "pending";
+
+
+  if(
+    s === "processing" ||
+    s === "confirmed"
+  ) return "confirmed";
+
+
+  if(
+    s === "on_the_way" ||
+    s === "on_the_way"
+  ) return "on_the_way";
+
+
+  if(
+    s === "picked_up" ||
+    s === "pickup_started"
+  ) return "picked_up";
+
+
+  if(
+    s === "completed" ||
+    s === "complete"
+  ) return "completed";
+
+
+  return "pending";
+
+}
+
+
+function statusText(status){
+
+  const s =
+    normalizeStatus(status);
+
+  return {
+
+    pending:"Pending",
+
+    confirmed:"Confirmed",
+
+    on_the_way:"On The Way",
+
+    picked_up:"Picked Up",
+
+    completed:"Completed"
+
+  }[s] || "Pending";
+
+}
+
+
+function statusClass(status){
+
+  const s =
+    normalizeStatus(status);
+
+  if(s === "completed")
+    return "";
+
+  if(s === "on_the_way")
+    return "blue";
+
+  if(s === "pending")
+    return "warning";
+
+  return "";
+
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+function progressPercent(status){
+
+  const s =
+    normalizeStatus(status);
+
+  const index =
+    statusStages.indexOf(s);
+
+  if(index < 0)
+    return 20;
+
+  return (
+    ((index + 1) /
+    statusStages.length) * 100
+  );
+
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
+
+function render(){
+
+  const grid =
+    document.getElementById(
+      "pickupsGrid"
+    );
+
+
+  if(!partnerPickups.length){
+
+    grid.innerHTML = `
+
+      <div
+        class="empty-state"
+        style="grid-column:1/-1"
+      >
+
+        <div class="empty-icon">
+          📦
+        </div>
+
+        <h3>
+          No Pickups Assigned
+        </h3>
+
+        <p>
+          No pickups are currently assigned
+          to <strong>${esc(partnerName)}</strong>.
+        </p>
+
+        <p>
+          Contact admin if you need a new pickup.
+        </p>
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  grid.innerHTML =
+    partnerPickups
+      .map(renderCard)
+      .join("");
+
+}
+
+
+/* =========================================================
+   RENDER CARD
+========================================================= */
+
+function renderCard(p){
+
+  const gps =
+    p.partnerGPS || {};
+
+  const isLive =
+    gps.enabled === true;
+
+
+  const status =
+    normalizeStatus(
+      p.status ||
+      p.trackingStatus
+    );
+
+
+  const phone =
+    getPhone(p);
+
+
+  const customerGPS =
+    getCustomerGPS(p);
+
+
+  const weight =
+    num(
+      p.totalWeightKg ??
+      p.weight ??
+      p.totalWeight
+    );
+
+
+  const amount =
+    num(
+      p.totalAmount ??
+      p.amount ??
+      p.total
+    );
+
+
+  const items =
+    Array.isArray(p.items)
+      ? p.items.length
+      : num(p.itemCount);
+
+
+  const liveClass =
+    isLive ? "live" : "";
+
+
+  return `
+
+  <article
+    class="pickup-card ${liveClass}"
+    id="pickup-card-${esc(p.id)}"
+  >
+
+    <div class="card-top">
+
+      <div class="customer-wrap">
+
+        <div class="customer-name">
+          ${esc(getCustomerName(p))}
+        </div>
+
+        <div class="pickup-id">
+          PICKUP ID · ${esc(p.id)}
+        </div>
+
+      </div>
+
+      <div
+        class="status-badge ${statusClass(status)}"
+      >
+        ${esc(statusText(status))}
+      </div>
+
+    </div>
+
+
+    <!-- CUSTOMER -->
+
+    <div class="customer-mini">
+
+      <div class="customer-contact">
+
+        <div class="customer-contact-label">
+          Customer Phone
+        </div>
+
+        <div class="customer-phone">
+          ${esc(phone || "Not available")}
+        </div>
+
+      </div>
+
+      ${
+        phone
+        ? `
+          <a
+            class="call-small"
+            href="tel:${esc(cleanPhone(phone))}"
+            title="Call customer"
+          >
+            📞
+          </a>
+        `
+        : ""
+      }
+
+    </div>
+
+
+    <!-- DETAILS -->
+
+    <div class="card-details">
+
+      <div class="detail-item">
+
+        <div class="detail-label">
+          Weight
+        </div>
+
+        <div class="detail-value">
+          ${weight.toFixed(2)} kg
+        </div>
+
+      </div>
+
+
+      <div class="detail-item">
+
+        <div class="detail-label">
+          Value
+        </div>
+
+        <div class="detail-value">
+          ₹${amount.toFixed(2)}
+        </div>
+
+      </div>
+
+
+      <div class="detail-item">
+
+        <div class="detail-label">
+          Items
+        </div>
+
+        <div class="detail-value">
+          ${items}
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ADDRESS -->
+
+    <div class="address-box">
+
+      <div class="address-title">
+        📍 Pickup Address
+      </div>
+
+      <div class="address-text">
+        ${esc(getAddress(p))}
+      </div>
+
+    </div>
+
+
+    <!-- GPS -->
+
+    <div
+      class="gps-status-box ${isLive ? "" : "offline"}"
+    >
+
+      <div class="gps-row">
+
+        <div class="gps-left">
+
+          <div class="gps-label">
+
+            ${
+              isLive
+              ? "🟢 LIVE LOCATION SHARING"
+              : "⚪ GPS LOCATION OFFLINE"
+            }
+
+          </div>
+
+          <div
+            class="gps-value"
+            id="gps-${esc(p.id)}"
+          >
+
+            ${
+              isLive
+
+              ? `
+                Lat ${num(gps.latitude).toFixed(6)}
+                · Lng ${num(gps.longitude).toFixed(6)}
+                ${
+                  gps.accuracy
+                  ? ` · ±${num(gps.accuracy).toFixed(0)}m`
+                  : ""
+                }
+              `
+
+              : `
+                Enable GPS so the customer can
+                see your live location.
+              `
+            }
+
+          </div>
+
+        </div>
+
+        ${
+          isLive
+          ? `<div class="gps-live-dot"></div>`
+          : ""
+        }
+
+      </div>
+
+    </div>
+
+
+    <!-- PROGRESS -->
+
+    <div class="progress-wrap">
+
+      <div class="progress-title">
+
+        <span>
+          Pickup Progress
+        </span>
+
+        <span>
+          ${Math.round(
+            progressPercent(status)
+          )}%
+        </span>
+
+      </div>
+
+      <div class="progress-track">
+
+        <div
+          class="progress-fill"
+          style="
+            width:${progressPercent(status)}%
+          "
+        ></div>
+
+      </div>
+
+    </div>
+
+
+    <!-- STATUS -->
+
+    <div class="tracking-section">
+
+      <div class="tracking-title">
+        Update Pickup Status
+      </div>
+
+      <div class="tracking-btns">
+
+        ${statusButton(
+          p.id,
+          "pending",
+          "📝",
+          "Pending",
+          status
+        )}
+
+        ${statusButton(
+          p.id,
+          "confirmed",
+          "✅",
+          "Confirmed",
+          status
+        )}
+
+        ${statusButton(
+          p.id,
+          "on_the_way",
+          "🚛",
+          "On Way",
+          status
+        )}
+
+        ${statusButton(
+          p.id,
+          "picked_up",
+          "📦",
+          "Picked Up",
+          status
+        )}
+
+        ${statusButton(
+          p.id,
+          "completed",
+          "🎉",
+          "Completed",
+          status
+        )}
+
+      </div>
+
+    </div>
+
+
+    <!-- ACTIONS -->
+
+    <div class="action-grid">
+
+      ${
+        phone
+        ? `
+          <a
+            class="action-btn btn-call"
+            href="tel:${esc(cleanPhone(phone))}"
+          >
+            📞 Call Customer
+          </a>
+        `
+        : `
+          <button
+            class="action-btn btn-call"
+            disabled
+          >
+            📞 No Phone
+          </button>
+        `
+      }
+
+
+      ${
+        phone
+        ? `
+          <button
+            class="action-btn btn-whatsapp"
+            onclick="openWhatsApp('${esc(phone)}')"
+          >
+            💬 WhatsApp
+          </button>
+        `
+        : `
+          <button
+            class="action-btn btn-whatsapp"
+            disabled
+          >
+            💬 WhatsApp
+          </button>
+        `
+      }
+
+
+      <button
+        class="action-btn btn-track"
+        onclick="openCustomerTracking('${esc(p.id)}')"
+      >
+        👁️ Live Tracking
+      </button>
+
+
+      <button
+        class="action-btn btn-map"
+        ${
+          customerGPS
+          ? `onclick="openCustomerMap('${esc(p.id)}')"`
+          : `onclick="showToast('Customer GPS location is not available')"`
+        }
+      >
+        🗺️ Customer Map
+      </button>
+
+
+      <button
+        class="action-btn btn-enable"
+        id="enable-${esc(p.id)}"
+        onclick="enableLocation('${esc(p.id)}')"
+        ${isLive ? "disabled" : ""}
+      >
+        🟢 Enable GPS
+      </button>
+
+
+      <button
+        class="action-btn btn-disable"
+        id="disable-${esc(p.id)}"
+        onclick="disableLocation('${esc(p.id)}')"
+        ${isLive ? "" : "disabled"}
+      >
+        🔴 Disable GPS
+      </button>
+
+
+      <button
+        class="action-btn btn-delete"
+        style="grid-column:1/-1"
+        onclick="deletePickup('${esc(p.id)}')"
+      >
+        🗑️ Delete Pickup
+      </button>
+
+    </div>
+
+  </article>
+
+  `;
+
+}
+
+
+/* =========================================================
+   STATUS BUTTON
+========================================================= */
+
+function statusButton(
+  id,
+  value,
+  icon,
+  label,
+  current
+){
+
+  const currentIndex =
+    statusStages.indexOf(
+      normalizeStatus(current)
+    );
+
+  const valueIndex =
+    statusStages.indexOf(value);
+
+
+  let cls = "";
+
+
+  if(value === current){
+
+    cls = "active";
+
+  }
+  else if(
+    valueIndex < currentIndex
+  ){
+
+    cls = "done";
+
+  }
+
+
+  return `
+
+    <button
+      class="tracking-btn ${cls}"
+      onclick="updateStatus(
+        '${esc(id)}',
+        '${value}'
+      )"
+    >
+
+      <span>
+        ${icon}
+      </span>
+
+      ${label}
+
+    </button>
+
+  `;
+
+}
+
+
+/* =========================================================
+   CUSTOMER LIVE TRACKING
+========================================================= */
+
+window.openCustomerTracking =
+function(id){
+
+  /*
+    IMPORTANT:
+    Do not use window.open().
+    WebIntoApp / Android WebView can block
+    or incorrectly handle new windows.
+
+    Navigate directly inside the WebView.
+  */
+
+  const url =
+    "track.html?id=" +
+    encodeURIComponent(id);
+
+
+  window.location.href = url;
+
+};
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+window.openWhatsApp =
+function(phone){
+
+  let clean =
+    String(phone || "")
+      .replace(/\D/g,"");
+
+
+  if(clean.length === 10){
+
+    clean =
+      "91" + clean;
+
+  }
+
+
+  if(!clean){
+
+    showToast(
+      "Customer phone not available"
+    );
+
+    return;
+
+  }
+
+
+  const message =
+    encodeURIComponent(
+      "Hello, this is COVAI SCRAP HUB pickup partner. I am contacting you regarding your scrap pickup."
+    );
+
+
+  /*
+    HTTPS WhatsApp URL.
+    Works much better in WebIntoApp
+    than custom whatsapp:// links.
+  */
+
+  const url =
+    "https://wa.me/" +
+    clean +
+    "?text=" +
+    message;
+
+
+  window.location.href = url;
+
+};
+
+
+/* =========================================================
+   ENABLE GPS
+========================================================= */
+
+window.enableLocation =
+function(id){
+
+  if(!navigator.geolocation){
+
+    showToast(
+      "GPS is not supported on this device"
+    );
+
+    return;
+
+  }
+
+
+  const enableBtn =
+    document.getElementById(
+      "enable-" + id
+    );
+
+  const disableBtn =
+    document.getElementById(
+      "disable-" + id
+    );
+
+  const gpsBox =
+    document.getElementById(
+      "gps-" + id
+    );
+
+
+  if(enableBtn)
+    enableBtn.disabled = true;
+
+
+  if(gpsBox)
+    gpsBox.textContent =
+      "📍 Getting your current location...";
+
+
+  navigator.geolocation.getCurrentPosition(
+
+    async position => {
+
+      const lat =
+        position.coords.latitude;
+
+      const lng =
+        position.coords.longitude;
+
+      const accuracy =
+        position.coords.accuracy || 0;
+
+
+      try{
+
+        await update(
+          ref(
+            db,
+            "pickupRequests/" + id
+          ),
+
+          {
+
+            partnerGPS:{
+
+              latitude:lat,
+
+              longitude:lng,
+
+              enabled:true,
+
+              accuracy:accuracy,
+
+              updatedAt:Date.now(),
+
+              timestamp:
+                new Date().toISOString()
+
+            }
+
+          }
+
+        );
+
+
+        startGPSWatcher(id);
+
+
+        if(enableBtn)
+          enableBtn.disabled = true;
+
+
+        if(disableBtn)
+          disableBtn.disabled = false;
+
+
+        showToast(
+          "✅ Live GPS sharing enabled"
+        );
+
+
+      }
+      catch(error){
+
+        console.error(
+          "GPS Firebase error:",
+          error
+        );
+
+
+        if(enableBtn)
+          enableBtn.disabled = false;
+
+
+        showToast(
+          "❌ Failed to save GPS: " +
+          error.message
+        );
+
+      }
+
+    },
+
+
+    error => {
+
+      console.error(
+        "GPS error:",
+        error
+      );
+
+
+      if(enableBtn)
+        enableBtn.disabled = false;
+
+
+      let message =
+        "Unable to get your location.";
+
+
+      if(error.code === 1){
+
+        message =
+          "Please allow location permission in WebIntoApp.";
+
+      }
+      else if(error.code === 2){
+
+        message =
+          "Location unavailable. Turn on GPS.";
+
+      }
+      else if(error.code === 3){
+
+        message =
+          "GPS request timed out. Try again.";
+
+      }
+
+
+      showToast(
+        "⚠️ " + message
+      );
+
+    },
+
+
+    {
+
+      enableHighAccuracy:true,
+
+      timeout:15000,
+
+      maximumAge:0
+
+    }
+
+  );
+
+};
+
+
+/* =========================================================
+   GPS WATCHER
+========================================================= */
+
+function startGPSWatcher(id){
+
+  if(gpsWatchers[id]){
+
+    return;
+
+  }
+
+
+  console.log(
+    "Starting GPS watcher:",
+    id
+  );
+
+
+  gpsWatchers[id] =
+    navigator.geolocation.watchPosition(
+
+      async position => {
+
+        const lat =
+          position.coords.latitude;
+
+        const lng =
+          position.coords.longitude;
+
+        const accuracy =
+          position.coords.accuracy || 0;
+
+
+        try{
+
+          await update(
+
+            ref(
+              db,
+              "pickupRequests/" + id
+            ),
+
+            {
+
+              partnerGPS:{
+
+                latitude:lat,
+
+                longitude:lng,
+
+                enabled:true,
+
+                accuracy:accuracy,
+
+                updatedAt:Date.now(),
+
+                timestamp:
+                  new Date().toISOString()
+
+              }
+
+            }
+
+          );
+
+
+          const gps =
+            document.getElementById(
+              "gps-" + id
+            );
+
+
+          if(gps){
+
+            gps.textContent =
+              `Lat ${lat.toFixed(6)} · ` +
+              `Lng ${lng.toFixed(6)} · ` +
+              `±${accuracy.toFixed(0)}m`;
+
+          }
+
+        }
+        catch(error){
+
+          console.error(
+            "GPS update error:",
+            error
+          );
+
+        }
+
+      },
+
+
+      error => {
+
+        console.error(
+          "GPS watcher error:",
+          error
+        );
+
+      },
+
+
+      {
+
+        enableHighAccuracy:true,
+
+        maximumAge:3000,
+
+        timeout:20000
+
+      }
+
+    );
+
+}
+
+
+/* =========================================================
+   DISABLE GPS
+========================================================= */
+
+window.disableLocation =
+async function(id){
+
+  if(gpsWatchers[id]){
+
+    navigator.geolocation.clearWatch(
+      gpsWatchers[id]
+    );
+
+    delete gpsWatchers[id];
+
+  }
+
+
+  try{
+
+    await update(
+
+      ref(
+        db,
+        "pickupRequests/" + id
+      ),
+
+      {
+
+        "partnerGPS/enabled":false,
+
+        "partnerGPS/updatedAt":
+          Date.now()
+
+      }
+
+    );
+
+
+    const enableBtn =
+      document.getElementById(
+        "enable-" + id
+      );
+
+    const disableBtn =
+      document.getElementById(
+        "disable-" + id
+      );
+
+
+    if(enableBtn)
+      enableBtn.disabled = false;
+
+
+    if(disableBtn)
+      disableBtn.disabled = true;
+
+
+    showToast(
+      "🔴 Live GPS sharing disabled"
+    );
+
+  }
+  catch(error){
+
+    console.error(
+      "Disable GPS error:",
+      error
+    );
+
+
+    showToast(
+      "❌ " + error.message
+    );
+
+  }
+
+};
+
+
+/* =========================================================
+   UPDATE STATUS
+========================================================= */
+
+window.updateStatus =
+async function(id,status){
+
+  if(
+    !statusStages.includes(status)
+  ){
+
+    return;
+
+  }
+
+
+  const statusMap = {
+
+    pending:"New",
+
+    confirmed:"Processing",
+
+    on_the_way:"On the Way",
+
+    picked_up:"Picked Up",
+
+    completed:"Completed"
+
+  };
+
+
+  const now =
+    Date.now();
+
+
+  const updates = {};
+
+
+  /*
+    Main status
+  */
+
+  updates[
+    `pickupRequests/${id}/trackingStatus`
+  ] = status;
+
+
+  /*
+    Current stage
+  */
+
+  updates[
+    `pickupRequests/${id}/tracking/${status}/completed`
+  ] = true;
+
+
+  updates[
+    `pickupRequests/${id}/tracking/${status}/time`
+  ] = now;
+
+
+  /*
+    Complete all previous stages
+  */
+
+  const currentIndex =
+    statusStages.indexOf(status);
+
+
+  for(
+    let i = 0;
+    i <= currentIndex;
+    i++
+  ){
+
+    const stage =
+      statusStages[i];
+
+
+    updates[
+      `pickupRequests/${id}/tracking/${stage}/completed`
+    ] = true;
+
+
+    updates[
+      `pickupRequests/${id}/tracking/${stage}/time`
+    ] =
+      updates[
+        `pickupRequests/${id}/tracking/${stage}/time`
+      ] || now;
+
+  }
+
+
+  /*
+    Legacy status
+  */
+
+  updates[
+    `pickupRequests/${id}/status`
+  ] =
+    statusMap[status];
+
+
+  /*
+    Useful timestamps
+  */
+
+  if(status === "confirmed"){
+
+    updates[
+      `pickupRequests/${id}/processingAt`
+    ] = now;
+
+  }
+
+
+  if(status === "on_the_way"){
+
+    updates[
+      `pickupRequests/${id}/onTheWayAt`
+    ] = now;
+
+  }
+
+
+  if(status === "picked_up"){
+
+    updates[
+      `pickupRequests/${id}/pickedUpAt`
+    ] = now;
+
+  }
+
+
+  if(status === "completed"){
+
+    updates[
+      `pickupRequests/${id}/completedAt`
+    ] = now;
+
+  }
+
+
+  try{
+
+    await update(
+      ref(db),
+      updates
+    );
+
+
+    showToast(
+      "✅ Status updated: " +
+      statusMap[status]
+    );
+
+
+  }
+  catch(error){
+
+    console.error(
+      "Status update error:",
+      error
+    );
+
+
+    showToast(
+      "❌ Failed: " +
+      error.message
+    );
+
+  }
+
+};
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+window.deletePickup =
+async function(id){
+
+  const pickup =
+    allPickups.find(
+      p => p.id === id
+    );
+
+
+  if(!pickup){
+
+    showToast(
+      "Pickup not found"
+    );
+
+    return;
+
+  }
+
+
+  const name =
+    getCustomerName(pickup);
+
+
+  const confirmed =
+    confirm(
+
+      `Delete pickup for ${name}?\n\n` +
+
+      `Pickup ID: ${id}\n\n` +
+
+      `This will permanently remove the pickup from Firebase.`
+
+    );
+
+
+  if(!confirmed){
+
+    return;
+
+  }
+
+
+  try{
+
+    if(gpsWatchers[id]){
+
+      navigator.geolocation.clearWatch(
+        gpsWatchers[id]
+      );
+
+      delete gpsWatchers[id];
+
+    }
+
+
+    await remove(
+      ref(
+        db,
+        "pickupRequests/" + id
+      )
+    );
+
+
+    showToast(
+      "✅ Pickup deleted successfully"
+    );
+
+  }
+  catch(error){
+
+    console.error(
+      "Delete error:",
+      error
+    );
+
+
+    showToast(
+      "❌ Delete failed: " +
+      error.message
+    );
+
+  }
+
+};
+
+
+/* =========================================================
+   CUSTOMER MAP
+========================================================= */
+
+window.openCustomerMap =
+function(id){
+
+  const pickup =
+    allPickups.find(
+      p => p.id === id
+    );
+
+
+  if(!pickup){
+
+    showToast(
+      "Pickup not found"
+    );
+
+    return;
+
+  }
+
+
+  const gps =
+    getCustomerGPS(pickup);
+
+
+  if(!gps){
+
+    showToast(
+      "📍 Customer GPS location is not available"
+    );
+
+    return;
+
+  }
+
+
+  currentMapPickup = pickup;
+
+
+  document.getElementById(
+    "mapTitle"
+  ).textContent =
+    getCustomerName(pickup);
+
+
+  document.getElementById(
+    "mapSub"
+  ).textContent =
+    "Customer pickup location";
+
+
+  const frame =
+    document.getElementById(
+      "mapFrame"
+    );
+
+
+  const fallback =
+    document.getElementById(
+      "mapFallback"
+    );
+
+
+  /*
+    HTTPS Google Maps embed.
+    This stays inside the WebView.
+  */
+
+  frame.src =
+    "https://www.google.com/maps?q=" +
+    gps.latitude +
+    "," +
+    gps.longitude +
+    "&z=16&output=embed";
+
+
+  frame.style.display =
+    "block";
+
+
+  fallback.style.display =
+    "none";
+
+
+  document.getElementById(
+    "mapModal"
+  ).classList.add("show");
+
+
+};
+
+
+/* =========================================================
+   GOOGLE MAPS
+========================================================= */
+
+window.openGoogleMaps =
+function(){
+
+  if(!currentMapPickup){
+
+    return;
+
+  }
+
+
+  const gps =
+    getCustomerGPS(
+      currentMapPickup
+    );
+
+
+  if(!gps){
+
+    showToast(
+      "Customer location unavailable"
+    );
+
+    return;
+
+  }
+
+
+  const url =
+    "https://www.google.com/maps/dir/?api=1&destination=" +
+    gps.latitude +
+    "," +
+    gps.longitude;
+
+
+  /*
+    Direct HTTPS navigation.
+    Better compatibility with WebIntoApp.
+  */
+
+  window.location.href = url;
+
+};
+
+
+/* =========================================================
+   CLOSE MAP
+========================================================= */
+
+window.closeMap =
+function(){
+
+  const modal =
+    document.getElementById(
+      "mapModal"
+    );
+
+
+  modal.classList.remove(
+    "show"
+  );
+
+
+  const frame =
+    document.getElementById(
+      "mapFrame"
+    );
+
+
+  frame.src = "";
+
+
+  currentMapPickup = null;
+
+};
+
+
+window.closeMapOutside =
+function(event){
+
+  if(
+    event.target.id ===
+    "mapModal"
+  ){
+
+    closeMap();
+
+  }
+
+};
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+let toastTimer = null;
+
+
+window.showToast =
+function(message){
+
+  const toast =
+    document.getElementById(
+      "toast"
+    );
+
+
+  toast.textContent =
+    message;
+
+
+  toast.classList.add(
+    "show"
+  );
+
+
+  clearTimeout(
+    toastTimer
+  );
+
+
+  toastTimer =
+    setTimeout(
+      () => {
+
+        toast.classList.remove(
+          "show"
+        );
+
+      },
+      2800
+    );
+
+};
+
+
+/* =========================================================
+   BEFORE UNLOAD
+========================================================= */
+
+window.addEventListener(
+  "beforeunload",
+  () => {
+
+    Object.keys(
+      gpsWatchers
+    ).forEach(id => {
+
+      navigator.geolocation.clearWatch(
+        gpsWatchers[id]
+      );
+
+    });
+
+  }
+);
+
+
+/* =========================================================
+   LOGIN ENTER KEY
+========================================================= */
+
+["partnerEmail","partnerPassword"].forEach(id => {
+
+  const input = document.getElementById(id);
+
+  if(input){
+
+    input.addEventListener("keydown", event => {
+
+      if(event.key === "Enter"){
+        window.partnerLogin();
+      }
+
+    });
+
+  }
+
+});
+
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function(){
+    restorePartnerNotificationState();
+  }
+);
+
+
+</script>
+
+
+<script>
+/* =========================================================
+   PREMIUM LOGIN POPUP + PASSWORD VISIBILITY
+========================================================= */
+(function(){
+  const popup=document.getElementById("partnerAlertPopup");
+  const title=document.getElementById("partnerPopupTitle");
+  const text=document.getElementById("partnerPopupText");
+  const icon=document.getElementById("partnerPopupIcon");
+  const ok=document.getElementById("partnerPopupOk");
+  const password=document.getElementById("partnerPassword");
+  const toggle=document.getElementById("togglePartnerPassword");
+
+  window.showPartnerPopup=function(titleText,message,type="error"){
+    if(!popup)return;
+    title.textContent=titleText || "Login failed";
+    text.textContent=message || "Please check your details and try again.";
+    if(type === "success"){
+      icon.textContent="✓";
+      icon.style.background="#eaf9f0";
+      icon.style.color="#168a4a";
+    }else if(type === "warning"){
+      icon.textContent="!";
+      icon.style.background="#fff7df";
+      icon.style.color="#b87900";
+    }else{
+      icon.textContent="!";
+      icon.style.background="#fff0ef";
+      icon.style.color="#d83f35";
+    }
+    popup.classList.add("show");
+    popup.setAttribute("aria-hidden","false");
+    setTimeout(()=>ok?.focus(),50);
+  };
+
+  function closePopup(){
+    if(!popup)return;
+    popup.classList.remove("show");
+    popup.setAttribute("aria-hidden","true");
+  }
+  ok?.addEventListener("click",closePopup);
+  popup?.addEventListener("click",e=>{if(e.target===popup)closePopup();});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")closePopup();});
+
+  toggle?.addEventListener("click",()=>{
+    const hidden=password.type === "password";
+    password.type=hidden ? "text" : "password";
+    toggle.textContent=hidden ? "HIDE" : "SHOW";
+    toggle.setAttribute("aria-label",hidden ? "Hide password" : "Show password");
+  });
+})();
+</script>
+</body>
+</html>

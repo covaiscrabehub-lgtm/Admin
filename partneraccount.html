@@ -1,0 +1,4052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#0b8f45">
+
+<title>COVAI SCRAP HUB | Partner Accounts</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+
+    --green:#0b8f45;
+    --green-dark:#067238;
+    --green-light:#eaf9f0;
+    --green-soft:#f4fbf6;
+
+    --text:#18221c;
+    --muted:#748078;
+
+    --white:#fff;
+    --bg:#f4f8f5;
+
+    --border:#e1ebe4;
+
+    --danger:#dc3545;
+    --danger-light:#fff1f2;
+
+    --warning:#c98200;
+    --warning-light:#fff7e7;
+
+    --shadow:0 15px 40px rgba(10,60,30,.08);
+
+}
+
+html,
+body{
+    min-height:100%;
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header{
+
+    background:
+        linear-gradient(
+            135deg,
+            #07833f,
+            #0aa950
+        );
+
+    color:white;
+
+    padding:17px 20px;
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,.08);
+
+}
+
+.header-inner{
+
+    width:min(1150px,100%);
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.logo{
+
+    width:52px;
+    height:52px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:5px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.brand h1{
+
+    font-size:19px;
+
+    font-weight:800;
+
+}
+
+.brand p{
+
+    font-size:10px;
+
+    opacity:.88;
+
+    margin-top:2px;
+
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+.container{
+
+    width:min(
+        1100px,
+        calc(100% - 30px)
+    );
+
+    margin:28px auto 50px;
+
+}
+
+
+/* ========================================
+   PAGE TITLE
+======================================== */
+
+.page-title{
+
+    text-align:center;
+
+    margin-bottom:24px;
+
+}
+
+.page-title h2{
+
+    font-size:27px;
+
+    font-weight:800;
+
+    color:#123b23;
+
+}
+
+.page-title p{
+
+    font-size:12px;
+
+    color:var(--muted);
+
+    margin-top:4px;
+
+}
+
+
+/* ========================================
+   TABS
+======================================== */
+
+.account-tabs{
+
+    max-width:650px;
+
+    margin:0 auto 25px;
+
+    padding:7px;
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    box-shadow:
+        0 8px 25px rgba(20,70,40,.06);
+
+}
+
+.tab-btn{
+
+    border:0;
+
+    background:transparent;
+
+    color:#6d7a72;
+
+    border-radius:13px;
+
+    padding:13px 15px;
+
+    font-family:inherit;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    transition:.2s;
+
+}
+
+.tab-btn:hover{
+
+    background:#f0f7f2;
+
+    color:var(--green);
+
+}
+
+.tab-btn.active{
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--green),
+            #0aa954
+        );
+
+    box-shadow:
+        0 6px 18px rgba(11,143,69,.22);
+
+}
+
+.tab-icon{
+
+    width:30px;
+    height:30px;
+
+    border-radius:9px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.tab-btn:not(.active)
+.tab-icon{
+
+    background:#edf5ef;
+
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.account-section{
+
+    display:none;
+
+}
+
+.account-section.active{
+
+    display:block;
+
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.card{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:21px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.card-header{
+
+    padding:21px 24px;
+
+    border-bottom:1px solid var(--border);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.card-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+}
+
+.card-title-icon{
+
+    width:43px;
+    height:43px;
+
+    border-radius:13px;
+
+    background:var(--green-light);
+
+    color:var(--green);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+}
+
+.card-title h3{
+
+    font-size:16px;
+
+    font-weight:800;
+
+}
+
+.card-title p{
+
+    font-size:10px;
+
+    color:var(--muted);
+
+    margin-top:2px;
+
+}
+
+.card-body{
+
+    padding:24px;
+
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:17px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+
+}
+
+.form-label{
+
+    font-size:11px;
+
+    font-weight:700;
+
+    color:#35463c;
+
+}
+
+.input-wrap{
+
+    position:relative;
+
+}
+
+.form-input{
+
+    width:100%;
+
+    height:48px;
+
+    border:1px solid #dce7df;
+
+    border-radius:12px;
+
+    padding:0 14px;
+
+    font-family:inherit;
+
+    font-size:13px;
+
+    outline:none;
+
+    background:#fbfdfb;
+
+    color:var(--text);
+
+    transition:.2s;
+
+}
+
+.form-input.password{
+
+    padding-right:48px;
+
+}
+
+.form-input:focus{
+
+    border-color:var(--green);
+
+    background:white;
+
+    box-shadow:
+        0 0 0 4px rgba(11,143,69,.08);
+
+}
+
+.password-toggle{
+
+    position:absolute;
+
+    right:7px;
+
+    top:7px;
+
+    width:34px;
+    height:34px;
+
+    border:0;
+
+    border-radius:9px;
+
+    background:#edf5ef;
+
+    color:var(--green);
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   PASSWORD INFO
+======================================== */
+
+.password-info{
+
+    margin-top:18px;
+
+    padding:12px 14px;
+
+    border:1px solid #e0eee4;
+
+    background:#f5faf7;
+
+    border-radius:12px;
+
+    font-size:10px;
+
+    line-height:1.6;
+
+    color:#64736a;
+
+}
+
+.password-info strong{
+
+    color:#34513e;
+
+}
+
+
+/* ========================================
+   PRIMARY BUTTON
+======================================== */
+
+.form-actions{
+
+    margin-top:22px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.primary-btn{
+
+    min-height:47px;
+
+    padding:0 22px;
+
+    border:0;
+
+    border-radius:12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--green),
+            #0aa954
+        );
+
+    color:white;
+
+    font-family:inherit;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    box-shadow:
+        0 7px 18px rgba(11,143,69,.20);
+
+}
+
+.primary-btn:disabled{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ========================================
+   MANAGE TOOLS
+======================================== */
+
+.manage-tools{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+}
+
+.member-count{
+
+    padding:6px 10px;
+
+    border-radius:30px;
+
+    background:var(--green-light);
+
+    color:var(--green);
+
+    font-size:10px;
+
+    font-weight:800;
+
+}
+
+.refresh-btn{
+
+    height:38px;
+
+    padding:0 12px;
+
+    border:1px solid #dce8df;
+
+    background:#f8fbf9;
+
+    border-radius:10px;
+
+    color:#456052;
+
+    font-family:inherit;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   SEARCH
+======================================== */
+
+.search-area{
+
+    padding:16px 24px;
+
+    background:#fbfdfb;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.search-wrap{
+
+    position:relative;
+
+}
+
+.search-icon{
+
+    position:absolute;
+
+    left:14px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#8a9990;
+
+}
+
+.search-input{
+
+    width:100%;
+
+    height:44px;
+
+    padding:0 15px 0 40px;
+
+    border:1px solid #dce7df;
+
+    border-radius:11px;
+
+    outline:none;
+
+    font-family:inherit;
+
+    font-size:12px;
+
+}
+
+.search-input:focus{
+
+    border-color:var(--green);
+
+    box-shadow:
+        0 0 0 4px rgba(11,143,69,.07);
+
+}
+
+
+/* ========================================
+   SMALL PARTNER CARDS
+======================================== */
+
+.member-list{
+
+    padding:20px 24px 25px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+    gap:12px;
+
+}
+
+.member-card{
+
+    background:white;
+
+    border:1px solid #e2ebe5;
+
+    border-radius:15px;
+
+    padding:13px 14px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.member-card:hover{
+
+    border-color:#bcdcc8;
+
+    transform:translateY(-1px);
+
+    box-shadow:
+        0 7px 20px rgba(20,80,40,.07);
+
+}
+
+.member-card-main{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    min-width:0;
+
+}
+
+.member-avatar{
+
+    width:40px;
+    height:40px;
+
+    flex-shrink:0;
+
+    border-radius:12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e1f7e8,
+            #c3ebcf
+        );
+
+    color:var(--green);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:15px;
+
+    font-weight:800;
+
+}
+
+.member-content{
+
+    min-width:0;
+
+    flex:1;
+
+}
+
+.member-name{
+
+    font-size:12px;
+
+    font-weight:800;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+.member-email{
+
+    margin-top:2px;
+
+    color:#7a8880;
+
+    font-size:9px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+.member-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+}
+
+.status-badge{
+
+    padding:4px 7px;
+
+    border-radius:30px;
+
+    background:#e9f8ef;
+
+    color:#168345;
+
+    font-size:8px;
+
+    font-weight:800;
+
+}
+
+.status-badge.inactive{
+
+    background:#fff0f1;
+
+    color:#d23b4a;
+
+}
+
+.view-arrow{
+
+    color:#8b9890;
+
+    font-size:16px;
+
+}
+
+
+/* ========================================
+   LOADING / EMPTY
+======================================== */
+
+.loading{
+
+    grid-column:1/-1;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    color:#738178;
+
+    font-size:11px;
+
+}
+
+.spinner{
+
+    width:29px;
+    height:29px;
+
+    margin:0 auto 10px;
+
+    border:3px solid #dcebe1;
+
+    border-top-color:var(--green);
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+.empty-state{
+
+    grid-column:1/-1;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    color:#7b8981;
+
+}
+
+.empty-icon{
+
+    width:55px;
+    height:55px;
+
+    margin:0 auto 11px;
+
+    border-radius:17px;
+
+    background:#edf5ef;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:23px;
+
+}
+
+.empty-state h4{
+
+    font-size:13px;
+
+    color:#44554b;
+
+}
+
+.empty-state p{
+
+    margin-top:4px;
+
+    font-size:10px;
+
+}
+
+
+/* ========================================
+   DETAILS MODAL
+======================================== */
+
+.details-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:900;
+
+    background:
+        rgba(8,24,14,.52);
+
+    backdrop-filter:blur(6px);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px;
+
+}
+
+.details-overlay.show{
+
+    display:flex;
+
+}
+
+.details-modal{
+
+    width:min(
+        480px,
+        100%
+    );
+
+    max-height:
+        calc(100vh - 36px);
+
+    overflow:auto;
+
+    background:white;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+
+    animation:modalIn .2s ease;
+
+}
+
+@keyframes modalIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(10px)
+            scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* ========================================
+   DETAILS HEADER
+======================================== */
+
+.details-header{
+
+    padding:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07833f,
+            #0aa950
+        );
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.details-avatar{
+
+    width:52px;
+    height:52px;
+
+    flex-shrink:0;
+
+    border-radius:15px;
+
+    background:white;
+
+    color:var(--green);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+    font-weight:800;
+
+}
+
+.details-heading{
+
+    min-width:0;
+
+    flex:1;
+
+}
+
+.details-heading h3{
+
+    font-size:16px;
+
+    font-weight:800;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+.details-heading p{
+
+    font-size:10px;
+
+    opacity:.88;
+
+    margin-top:2px;
+
+    word-break:break-word;
+
+}
+
+.close-details{
+
+    width:35px;
+    height:35px;
+
+    flex-shrink:0;
+
+    border:0;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.17);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+
+/* ========================================
+   DETAILS BODY
+======================================== */
+
+.details-body{
+
+    padding:20px;
+
+}
+
+.details-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+}
+
+.detail-box{
+
+    padding:12px;
+
+    border:1px solid #e6eee8;
+
+    background:#fbfdfb;
+
+    border-radius:12px;
+
+    min-width:0;
+
+}
+
+.detail-box.full{
+
+    grid-column:1/-1;
+
+}
+
+.detail-label{
+
+    color:#849088;
+
+    font-size:9px;
+
+    font-weight:600;
+
+}
+
+.detail-value{
+
+    margin-top:4px;
+
+    color:#25352b;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    word-break:break-word;
+
+}
+
+.detail-value.green{
+
+    color:var(--green);
+
+}
+
+.uid-value{
+
+    font-size:9px;
+
+    font-family:monospace;
+
+}
+
+
+/* ========================================
+   SECURITY BOX
+======================================== */
+
+.security-box{
+
+    margin-top:15px;
+
+    padding:13px;
+
+    border-radius:13px;
+
+    border:1px solid #e5ebe7;
+
+    background:#f8faf9;
+
+}
+
+.security-title{
+
+    font-size:11px;
+
+    font-weight:800;
+
+    color:#35463c;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+.security-box p{
+
+    margin-top:5px;
+
+    font-size:9px;
+
+    line-height:1.5;
+
+    color:#77837c;
+
+}
+
+
+/* ========================================
+   DETAILS ACTIONS
+======================================== */
+
+.details-actions{
+
+    margin-top:16px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:9px;
+
+}
+
+.action-btn{
+
+    height:43px;
+
+    border-radius:11px;
+
+    font-family:inherit;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+}
+
+.reset-btn{
+
+    border:1px solid #cfe4d6;
+
+    background:var(--green-light);
+
+    color:var(--green);
+
+}
+
+.delete-btn{
+
+    border:1px solid #efcbd0;
+
+    background:var(--danger-light);
+
+    color:var(--danger);
+
+}
+
+.close-btn{
+
+    grid-column:1/-1;
+
+    border:0;
+
+    background:#edf2ef;
+
+    color:#56645c;
+
+}
+
+
+/* ========================================
+   CONFIRM POPUP
+======================================== */
+
+.popup-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:1200;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    background:
+        rgba(5,20,10,.5);
+
+    backdrop-filter:blur(5px);
+
+}
+
+.popup-overlay.show{
+
+    display:flex;
+
+}
+
+.popup{
+
+    width:min(
+        420px,
+        100%
+    );
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.22);
+
+    text-align:center;
+
+}
+
+.popup-icon{
+
+    width:56px;
+    height:56px;
+
+    margin:0 auto 14px;
+
+    border-radius:17px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--green-light);
+
+    color:var(--green);
+
+    font-size:23px;
+
+}
+
+.popup-icon.error{
+
+    background:#fff0f1;
+
+    color:var(--danger);
+
+}
+
+.popup-icon.warning{
+
+    background:var(--warning-light);
+
+    color:var(--warning);
+
+}
+
+.popup h3{
+
+    font-size:16px;
+
+    font-weight:800;
+
+}
+
+.popup p{
+
+    margin-top:6px;
+
+    color:#718078;
+
+    font-size:11px;
+
+    line-height:1.6;
+
+}
+
+.popup-actions{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:19px;
+
+}
+
+.popup-btn{
+
+    flex:1;
+
+    height:42px;
+
+    border:0;
+
+    border-radius:10px;
+
+    font-family:inherit;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.popup-btn.cancel{
+
+    background:#edf2ef;
+
+    color:#536158;
+
+}
+
+.popup-btn.confirm{
+
+    background:var(--danger);
+
+    color:white;
+
+}
+
+.popup-btn.success{
+
+    background:var(--green);
+
+    color:white;
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    color:#87938c;
+
+    font-size:9px;
+
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media(max-width:760px){
+
+    .header{
+
+        padding:14px 15px;
+
+    }
+
+    .logo{
+
+        width:45px;
+        height:45px;
+
+    }
+
+    .brand h1{
+
+        font-size:16px;
+
+    }
+
+    .brand p{
+
+        font-size:9px;
+
+    }
+
+    .container{
+
+        width:
+            calc(100% - 20px);
+
+        margin-top:20px;
+
+    }
+
+    .page-title h2{
+
+        font-size:22px;
+
+    }
+
+    .page-title p{
+
+        font-size:10px;
+
+    }
+
+    .tab-btn{
+
+        font-size:10px;
+
+        padding:11px 7px;
+
+    }
+
+    .tab-icon{
+
+        width:27px;
+        height:27px;
+
+        font-size:13px;
+
+    }
+
+    .card-header{
+
+        padding:17px;
+
+    }
+
+    .card-body{
+
+        padding:17px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-actions{
+
+        justify-content:stretch;
+
+    }
+
+    .primary-btn{
+
+        width:100%;
+
+    }
+
+    .member-list{
+
+        grid-template-columns:1fr;
+
+        padding:15px 17px 20px;
+
+    }
+
+    .manage-tools{
+
+        flex-wrap:wrap;
+
+        justify-content:flex-end;
+
+    }
+
+    .search-area{
+
+        padding:14px 17px;
+
+    }
+
+}
+
+@media(max-width:450px){
+
+    .card-title h3{
+
+        font-size:13px;
+
+    }
+
+    .card-title p{
+
+        font-size:9px;
+
+    }
+
+    .details-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .detail-box.full{
+
+        grid-column:auto;
+
+    }
+
+    .details-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .close-btn{
+
+        grid-column:auto;
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ========================================
+     HEADER
+======================================== -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <img
+            src="logo.jpeg"
+            class="logo"
+            alt="COVAI SCRAP HUB"
+            onerror="this.style.display='none'"
+        >
+
+        <div class="brand">
+
+            <h1>
+                COVAI SCRAP HUB
+            </h1>
+
+            <p>
+                Partner Account Management
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ========================================
+     MAIN
+======================================== -->
+
+<main class="container">
+
+
+    <div class="page-title">
+
+        <h2>
+            Partner Accounts
+        </h2>
+
+        <p>
+            Create and manage COVAI SCRAP HUB partners
+        </p>
+
+    </div>
+
+
+    <!-- ========================================
+         TABS
+    ======================================== -->
+
+    <div class="account-tabs">
+
+        <button
+            class="tab-btn active"
+            id="createTab"
+            onclick="showSection('create')"
+        >
+
+            <span class="tab-icon">
+                👤
+            </span>
+
+            <span>
+                Create Account
+            </span>
+
+        </button>
+
+
+        <button
+            class="tab-btn"
+            id="manageTab"
+            onclick="showSection('manage')"
+        >
+
+            <span class="tab-icon">
+                ⚙️
+            </span>
+
+            <span>
+                Manage Accounts
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- ========================================
+         CREATE SECTION
+    ======================================== -->
+
+    <section
+        class="account-section active"
+        id="createSection"
+    >
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <div class="card-title">
+
+                    <div class="card-title-icon">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Create Partner Account
+                        </h3>
+
+                        <p>
+                            Create login credentials for a new partner
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <form id="partnerForm">
+
+                    <div class="form-grid">
+
+
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Partner Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="partnerName"
+                                class="form-input"
+                                placeholder="Enter partner full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Login Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="partnerEmail"
+                                class="form-input"
+                                placeholder="partner@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Password
+                            </label>
+
+                            <div class="input-wrap">
+
+                                <input
+                                    type="password"
+                                    id="partnerPassword"
+                                    class="form-input password"
+                                    placeholder="Create password"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    onclick="togglePassword(
+                                        'partnerPassword',
+                                        this
+                                    )"
+                                >
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Confirm Password
+                            </label>
+
+                            <div class="input-wrap">
+
+                                <input
+                                    type="password"
+                                    id="partnerConfirmPassword"
+                                    class="form-input password"
+                                    placeholder="Confirm password"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    onclick="togglePassword(
+                                        'partnerConfirmPassword',
+                                        this
+                                    )"
+                                >
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="password-info">
+
+                        <strong>
+                            Password:
+                        </strong>
+
+                        At least 6 characters.
+
+                        The password is securely handled by
+                        Firebase Authentication and is not stored
+                        in the partner profile.
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                            id="createBtn"
+                        >
+
+                            ➕
+                            Create Partner Account
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         MANAGE SECTION
+    ======================================== -->
+
+    <section
+        class="account-section"
+        id="manageSection"
+    >
+
+        <div class="card">
+
+
+            <div class="card-header">
+
+                <div class="card-title">
+
+                    <div class="card-title-icon">
+                        ⚙️
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Manage Accounts
+                        </h3>
+
+                        <p>
+                            Click a partner card to view all details
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="manage-tools">
+
+                    <span
+                        class="member-count"
+                        id="memberCount"
+                    >
+                        0 Members
+                    </span>
+
+                    <button
+                        class="refresh-btn"
+                        onclick="loadPartners()"
+                    >
+                        🔄 Refresh
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-area">
+
+                <div class="search-wrap">
+
+                    <span class="search-icon">
+                        🔍
+                    </span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="Search partner name or email..."
+                        oninput="filterPartners()"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="member-list"
+                id="memberList"
+            >
+
+                <div class="loading">
+
+                    <div class="spinner"></div>
+
+                    Loading partner accounts...
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <div class="footer">
+
+        © 2026 COVAI SCRAP HUB • Partner Account Management
+
+    </div>
+
+
+</main>
+
+
+<!-- ========================================
+     PARTNER DETAILS MODAL
+======================================== -->
+
+<div
+    class="details-overlay"
+    id="detailsOverlay"
+>
+
+    <div class="details-modal">
+
+
+        <div class="details-header">
+
+            <div
+                class="details-avatar"
+                id="detailsAvatar"
+            >
+                P
+            </div>
+
+
+            <div class="details-heading">
+
+                <h3 id="detailsName">
+                    Partner
+                </h3>
+
+                <p id="detailsEmail">
+                    partner@email.com
+                </p>
+
+            </div>
+
+
+            <button
+                class="close-details"
+                onclick="closeDetails()"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="details-body">
+
+
+            <div class="details-grid">
+
+
+                <div class="detail-box">
+
+                    <div class="detail-label">
+                        Partner Name
+                    </div>
+
+                    <div
+                        class="detail-value"
+                        id="detailName"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <div class="detail-label">
+                        Status
+                    </div>
+
+                    <div
+                        class="detail-value green"
+                        id="detailStatus"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <div class="detail-label">
+                        Email / Login ID
+                    </div>
+
+                    <div
+                        class="detail-value"
+                        id="detailEmail"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <div class="detail-label">
+                        Role
+                    </div>
+
+                    <div
+                        class="detail-value"
+                        id="detailRole"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="detail-box full">
+
+                    <div class="detail-label">
+                        Firebase User ID
+                    </div>
+
+                    <div
+                        class="detail-value uid-value"
+                        id="detailUid"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <div class="detail-label">
+                        Created
+                    </div>
+
+                    <div
+                        class="detail-value"
+                        id="detailCreated"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <div class="detail-label">
+                        Updated
+                    </div>
+
+                    <div
+                        class="detail-value"
+                        id="detailUpdated"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="detail-box full">
+
+                    <div class="detail-label">
+                        Created By
+                    </div>
+
+                    <div
+                        class="detail-value"
+                        id="detailCreatedBy"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- SECURITY -->
+
+            <div class="security-box">
+
+                <div class="security-title">
+
+                    🔐
+                    Account Password
+
+                </div>
+
+                <p>
+
+                    Firebase Authentication does not allow
+                    this page to read or display the existing
+                    password. Use the button below to send a
+                    password-reset email to the partner.
+
+                </p>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="details-actions">
+
+
+                <button
+                    class="action-btn reset-btn"
+                    id="resetPasswordBtn"
+                >
+
+                    🔑
+                    Send Password Reset
+
+                </button>
+
+
+                <button
+                    class="action-btn delete-btn"
+                    id="deletePartnerBtn"
+                >
+
+                    🗑
+                    Delete Profile
+
+                </button>
+
+
+                <button
+                    class="action-btn close-btn"
+                    onclick="closeDetails()"
+                >
+
+                    Close
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================================
+     GENERAL POPUP
+======================================== -->
+
+<div
+    class="popup-overlay"
+    id="popupOverlay"
+>
+
+    <div class="popup">
+
+        <div
+            class="popup-icon"
+            id="popupIcon"
+        >
+            ✓
+        </div>
+
+        <h3 id="popupTitle">
+            Success
+        </h3>
+
+        <p id="popupMessage">
+            Operation completed.
+        </p>
+
+        <div
+            class="popup-actions"
+            id="popupActions"
+        >
+
+            <button
+                class="popup-btn success"
+                onclick="closePopup()"
+            >
+                OK
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================================
+     FIREBASE
+======================================== -->
+
+<script type="module">
+
+
+import {
+
+    initializeApp,
+    getApps,
+    getApp
+
+} from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+
+import {
+
+    getAuth,
+    createUserWithEmailAndPassword,
+    signOut,
+    sendPasswordResetEmail
+
+} from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
+import {
+
+    getDatabase,
+    ref,
+    set,
+    get,
+    remove
+
+} from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+
+/* ========================================
+   FIREBASE CONFIG
+======================================== */
+
+const firebaseConfig = {
+
+    apiKey:
+        "AIzaSyApJhYmo0pHNqVD0XIyOlQDqDzACztPdHA",
+
+    authDomain:
+        "covai-scrap-hub.firebaseapp.com",
+
+    databaseURL:
+        "https://covai-scrap-hub-default-rtdb.firebaseio.com",
+
+    projectId:
+        "covai-scrap-hub",
+
+    storageBucket:
+        "covai-scrap-hub.firebasestorage.app",
+
+    messagingSenderId:
+        "979133721874",
+
+    appId:
+        "1:979133721874:web:c5829bb8dbf5270c0917cb",
+
+    measurementId:
+        "G-P3PTSBHWMF"
+
+};
+
+
+/* ========================================
+   MAIN APP
+======================================== */
+
+let mainApp;
+
+
+if(getApps().length > 0){
+
+    mainApp = getApp();
+
+}else{
+
+    mainApp =
+        initializeApp(firebaseConfig);
+
+}
+
+
+const db =
+    getDatabase(mainApp);
+
+
+/* ========================================
+   SECONDARY AUTH APP
+======================================== */
+
+let creatorApp;
+
+
+const creatorExisting =
+    getApps().find(
+        app =>
+            app.name ===
+            "partnerAccountCreator"
+    );
+
+
+if(creatorExisting){
+
+    creatorApp =
+        creatorExisting;
+
+}else{
+
+    creatorApp =
+        initializeApp(
+            firebaseConfig,
+            "partnerAccountCreator"
+        );
+
+}
+
+
+const creatorAuth =
+    getAuth(creatorApp);
+
+
+/* ========================================
+   DATA
+======================================== */
+
+let allPartners = [];
+
+let selectedPartner = null;
+
+
+/* ========================================
+   CREATE ACCOUNT
+======================================== */
+
+document
+.getElementById("partnerForm")
+.addEventListener(
+    "submit",
+    async function(event){
+
+        event.preventDefault();
+
+
+        const name =
+            document
+            .getElementById("partnerName")
+            .value
+            .trim();
+
+
+        const email =
+            document
+            .getElementById("partnerEmail")
+            .value
+            .trim()
+            .toLowerCase();
+
+
+        const password =
+            document
+            .getElementById("partnerPassword")
+            .value;
+
+
+        const confirmPassword =
+            document
+            .getElementById(
+                "partnerConfirmPassword"
+            )
+            .value;
+
+
+        if(!name){
+
+            showPopup(
+                "Invalid Name",
+                "Please enter the partner name.",
+                "error"
+            );
+
+            return;
+
+        }
+
+
+        if(!email){
+
+            showPopup(
+                "Invalid Email",
+                "Please enter a valid email address.",
+                "error"
+            );
+
+            return;
+
+        }
+
+
+        if(password.length < 6){
+
+            showPopup(
+                "Password Too Short",
+                "Password must contain at least 6 characters.",
+                "error"
+            );
+
+            return;
+
+        }
+
+
+        if(password !== confirmPassword){
+
+            showPopup(
+                "Password Mismatch",
+                "Password and confirm password do not match.",
+                "error"
+            );
+
+            return;
+
+        }
+
+
+        const button =
+            document.getElementById(
+                "createBtn"
+            );
+
+
+        button.disabled = true;
+
+        button.textContent =
+            "⏳ Creating Account...";
+
+
+        try{
+
+
+            const credential =
+                await
+                createUserWithEmailAndPassword(
+                    creatorAuth,
+                    email,
+                    password
+                );
+
+
+            const uid =
+                credential.user.uid;
+
+
+            await set(
+                ref(
+                    db,
+                    "partners/" + uid
+                ),
+                {
+
+                    name:name,
+
+                    email:email,
+
+                    role:"partner",
+
+                    status:"active",
+
+                    createdAt:
+                        new Date()
+                        .toISOString(),
+
+                    updatedAt:
+                        new Date()
+                        .toISOString(),
+
+                    createdBy:
+                        "admin"
+
+                }
+            );
+
+
+            await signOut(
+                creatorAuth
+            );
+
+
+            document
+            .getElementById(
+                "partnerForm"
+            )
+            .reset();
+
+
+            await loadPartners();
+
+
+            showPopup(
+                "Partner Account Created",
+                "The partner account was created successfully. The partner can now log in with the email and password you created.",
+                "success"
+            );
+
+
+        }catch(error){
+
+            console.error(error);
+
+
+            let message =
+                error.message ||
+                "Unable to create account.";
+
+
+            if(
+                error.code ===
+                "auth/email-already-in-use"
+            ){
+
+                message =
+                    "This email address is already registered.";
+
+            }
+
+            else if(
+                error.code ===
+                "auth/invalid-email"
+            ){
+
+                message =
+                    "The email address is invalid.";
+
+            }
+
+            else if(
+                error.code ===
+                "auth/weak-password"
+            ){
+
+                message =
+                    "Password must contain at least 6 characters.";
+
+            }
+
+
+            showPopup(
+                "Account Creation Failed",
+                message,
+                "error"
+            );
+
+
+        }finally{
+
+            button.disabled = false;
+
+            button.textContent =
+                "➕ Create Partner Account";
+
+        }
+
+    }
+);
+
+
+/* ========================================
+   LOAD PARTNERS
+======================================== */
+
+window.loadPartners =
+async function(){
+
+    const list =
+        document.getElementById(
+            "memberList"
+        );
+
+
+    list.innerHTML = `
+
+        <div class="loading">
+
+            <div class="spinner"></div>
+
+            Loading partner accounts...
+
+        </div>
+
+    `;
+
+
+    try{
+
+        const snapshot =
+            await get(
+                ref(db,"partners")
+            );
+
+
+        allPartners = [];
+
+
+        if(snapshot.exists()){
+
+            const data =
+                snapshot.val();
+
+
+            Object.entries(data)
+            .forEach(
+                ([uid,partner]) => {
+
+                    if(
+                        partner &&
+                        (
+                            !partner.role ||
+                            partner.role === "partner"
+                        )
+                    ){
+
+                        allPartners.push({
+
+                            uid:uid,
+
+                            ...partner
+
+                        });
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        allPartners.sort(
+            (a,b) => {
+
+                return new Date(
+                    b.createdAt || 0
+                ) -
+                new Date(
+                    a.createdAt || 0
+                );
+
+            }
+        );
+
+
+        updateCount(
+            allPartners.length
+        );
+
+
+        renderPartners(
+            allPartners
+        );
+
+
+    }catch(error){
+
+        console.error(error);
+
+
+        list.innerHTML = `
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    ⚠️
+                </div>
+
+                <h4>
+                    Unable to load accounts
+                </h4>
+
+                <p>
+                    ${escapeHtml(
+                        error.message
+                    )}
+                </p>
+
+            </div>
+
+        `;
+
+    }
+
+};
+
+
+/* ========================================
+   RENDER SMALL CARDS
+======================================== */
+
+function renderPartners(
+    partners
+){
+
+    const list =
+        document.getElementById(
+            "memberList"
+        );
+
+
+    if(!partners.length){
+
+        list.innerHTML = `
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    👥
+                </div>
+
+                <h4>
+                    No partner accounts
+                </h4>
+
+                <p>
+                    Create a partner account to see it here.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    list.innerHTML =
+        partners
+        .map(
+            partner => {
+
+                const name =
+                    partner.name ||
+                    "Unnamed Partner";
+
+
+                const email =
+                    partner.email ||
+                    "No email";
+
+
+                const status =
+                    partner.status ||
+                    "active";
+
+
+                const initial =
+                    name
+                    .charAt(0)
+                    .toUpperCase();
+
+
+                return `
+
+                    <div
+                        class="member-card"
+                        onclick="openPartnerDetails(
+                            '${escapeAttribute(partner.uid)}'
+                        )"
+                    >
+
+                        <div class="member-card-main">
+
+                            <div class="member-avatar">
+
+                                ${escapeHtml(
+                                    initial
+                                )}
+
+                            </div>
+
+
+                            <div class="member-content">
+
+                                <div class="member-name">
+
+                                    ${escapeHtml(
+                                        name
+                                    )}
+
+                                </div>
+
+                                <div class="member-email">
+
+                                    ${escapeHtml(
+                                        email
+                                    )}
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="member-right">
+
+                                <span
+                                    class="status-badge ${
+                                        status
+                                        .toLowerCase()
+                                        ===
+                                        "active"
+                                            ? ""
+                                            : "inactive"
+                                    }"
+                                >
+
+                                    ${escapeHtml(
+                                        capitalize(status)
+                                    )}
+
+                                </span>
+
+
+                                <span class="view-arrow">
+                                    ›
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+            }
+        )
+        .join("");
+
+}
+
+
+/* ========================================
+   OPEN DETAILS
+======================================== */
+
+window.openPartnerDetails =
+function(uid){
+
+    const partner =
+        allPartners.find(
+            item =>
+                item.uid === uid
+        );
+
+
+    if(!partner){
+
+        return;
+
+    }
+
+
+    selectedPartner =
+        partner;
+
+
+    const name =
+        partner.name ||
+        "Unnamed Partner";
+
+
+    const email =
+        partner.email ||
+        "No email";
+
+
+    const status =
+        partner.status ||
+        "active";
+
+
+    document
+    .getElementById(
+        "detailsAvatar"
+    )
+    .textContent =
+        name
+        .charAt(0)
+        .toUpperCase();
+
+
+    document
+    .getElementById(
+        "detailsName"
+    )
+    .textContent =
+        name;
+
+
+    document
+    .getElementById(
+        "detailsEmail"
+    )
+    .textContent =
+        email;
+
+
+    document
+    .getElementById(
+        "detailName"
+    )
+    .textContent =
+        name;
+
+
+    document
+    .getElementById(
+        "detailStatus"
+    )
+    .textContent =
+        capitalize(status);
+
+
+    document
+    .getElementById(
+        "detailEmail"
+    )
+    .textContent =
+        email;
+
+
+    document
+    .getElementById(
+        "detailRole"
+    )
+    .textContent =
+        partner.role ||
+        "partner";
+
+
+    document
+    .getElementById(
+        "detailUid"
+    )
+    .textContent =
+        partner.uid ||
+        "—";
+
+
+    document
+    .getElementById(
+        "detailCreated"
+    )
+    .textContent =
+        formatDate(
+            partner.createdAt
+        );
+
+
+    document
+    .getElementById(
+        "detailUpdated"
+    )
+    .textContent =
+        formatDate(
+            partner.updatedAt
+        );
+
+
+    document
+    .getElementById(
+        "detailCreatedBy"
+    )
+    .textContent =
+        partner.createdBy ||
+        "admin";
+
+
+    document
+    .getElementById(
+        "detailsOverlay"
+    )
+    .classList.add(
+        "show"
+    );
+
+};
+
+
+/* ========================================
+   CLOSE DETAILS
+======================================== */
+
+window.closeDetails =
+function(){
+
+    document
+    .getElementById(
+        "detailsOverlay"
+    )
+    .classList.remove(
+        "show"
+    );
+
+    selectedPartner =
+        null;
+
+};
+
+
+/* ========================================
+   PASSWORD RESET
+======================================== */
+
+document
+.getElementById(
+    "resetPasswordBtn"
+)
+.addEventListener(
+    "click",
+    async function(){
+
+        if(!selectedPartner){
+
+            return;
+
+        }
+
+
+        const email =
+            selectedPartner.email;
+
+
+        if(!email){
+
+            showPopup(
+                "No Email",
+                "This partner does not have an email address saved.",
+                "error"
+            );
+
+            return;
+
+        }
+
+
+        try{
+
+            await sendPasswordResetEmail(
+                creatorAuth,
+                email
+            );
+
+
+            showPopup(
+                "Password Reset Sent",
+                `A password-reset email has been sent to ${email}. The partner can use that email to create a new password.`,
+                "success"
+            );
+
+
+        }catch(error){
+
+            console.error(error);
+
+
+            let message =
+                error.message ||
+                "Unable to send password reset email.";
+
+
+            if(
+                error.code ===
+                "auth/user-not-found"
+            ){
+
+                message =
+                    "No Firebase Authentication account was found for this email.";
+
+            }
+
+
+            showPopup(
+                "Password Reset Failed",
+                message,
+                "error"
+            );
+
+        }
+
+    }
+);
+
+
+/* ========================================
+   DELETE PROFILE
+======================================== */
+
+document
+.getElementById(
+    "deletePartnerBtn"
+)
+.addEventListener(
+    "click",
+    function(){
+
+        if(!selectedPartner){
+
+            return;
+
+        }
+
+
+        const uid =
+            selectedPartner.uid;
+
+
+        const name =
+            selectedPartner.name ||
+            "this partner";
+
+
+        closeDetails();
+
+
+        showConfirmPopup(
+            "Delete Partner Profile?",
+            `Are you sure you want to delete the partner profile for "${name}"?`,
+            async function(){
+
+                await deletePartner(
+                    uid
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* ========================================
+   DELETE PARTNER
+======================================== */
+
+async function deletePartner(
+    uid
+){
+
+    try{
+
+        await remove(
+            ref(
+                db,
+                "partners/" + uid
+            )
+        );
+
+
+        allPartners =
+            allPartners.filter(
+                partner =>
+                    partner.uid !== uid
+            );
+
+
+        const search =
+            document
+            .getElementById(
+                "searchInput"
+            )
+            .value
+            .trim();
+
+
+        if(search){
+
+            filterPartners();
+
+        }else{
+
+            renderPartners(
+                allPartners
+            );
+
+            updateCount(
+                allPartners.length
+            );
+
+        }
+
+
+        showPopup(
+            "Profile Deleted",
+            "The partner profile was removed from the Realtime Database.",
+            "success"
+        );
+
+
+    }catch(error){
+
+        console.error(error);
+
+
+        showPopup(
+            "Delete Failed",
+            error.message ||
+            "Unable to delete partner profile.",
+            "error"
+        );
+
+    }
+
+}
+
+
+/* ========================================
+   SEARCH
+======================================== */
+
+window.filterPartners =
+function(){
+
+    const query =
+        document
+        .getElementById(
+            "searchInput"
+        )
+        .value
+        .trim()
+        .toLowerCase();
+
+
+    if(!query){
+
+        renderPartners(
+            allPartners
+        );
+
+        updateCount(
+            allPartners.length
+        );
+
+        return;
+
+    }
+
+
+    const filtered =
+        allPartners.filter(
+            partner => {
+
+                const name =
+                    (
+                        partner.name ||
+                        ""
+                    )
+                    .toLowerCase();
+
+
+                const email =
+                    (
+                        partner.email ||
+                        ""
+                    )
+                    .toLowerCase();
+
+
+                return (
+                    name.includes(query) ||
+                    email.includes(query)
+                );
+
+            }
+        );
+
+
+    renderPartners(
+        filtered
+    );
+
+
+    document
+    .getElementById(
+        "memberCount"
+    )
+    .textContent =
+        `${filtered.length} Found`;
+
+};
+
+
+/* ========================================
+   SECTION SWITCH
+======================================== */
+
+window.showSection =
+function(section){
+
+    const createSection =
+        document.getElementById(
+            "createSection"
+        );
+
+
+    const manageSection =
+        document.getElementById(
+            "manageSection"
+        );
+
+
+    const createTab =
+        document.getElementById(
+            "createTab"
+        );
+
+
+    const manageTab =
+        document.getElementById(
+            "manageTab"
+        );
+
+
+    if(section === "create"){
+
+        createSection
+        .classList
+        .add("active");
+
+
+        manageSection
+        .classList
+        .remove("active");
+
+
+        createTab
+        .classList
+        .add("active");
+
+
+        manageTab
+        .classList
+        .remove("active");
+
+
+    }else{
+
+        createSection
+        .classList
+        .remove("active");
+
+
+        manageSection
+        .classList
+        .add("active");
+
+
+        createTab
+        .classList
+        .remove("active");
+
+
+        manageTab
+        .classList
+        .add("active");
+
+
+        loadPartners();
+
+    }
+
+};
+
+
+/* ========================================
+   COUNT
+======================================== */
+
+function updateCount(
+    count
+){
+
+    document
+    .getElementById(
+        "memberCount"
+    )
+    .textContent =
+        `${count} ${
+            count === 1
+                ? "Member"
+                : "Members"
+        }`;
+
+}
+
+
+/* ========================================
+   PASSWORD FIELD TOGGLE
+======================================== */
+
+window.togglePassword =
+function(
+    inputId,
+    button
+){
+
+    const input =
+        document.getElementById(
+            inputId
+        );
+
+
+    if(
+        input.type ===
+        "password"
+    ){
+
+        input.type =
+            "text";
+
+        button.textContent =
+            "🙈";
+
+    }else{
+
+        input.type =
+            "password";
+
+        button.textContent =
+            "👁";
+
+    }
+
+};
+
+
+/* ========================================
+   POPUP
+======================================== */
+
+function showPopup(
+    title,
+    message,
+    type="success"
+){
+
+    const overlay =
+        document.getElementById(
+            "popupOverlay"
+        );
+
+
+    const icon =
+        document.getElementById(
+            "popupIcon"
+        );
+
+
+    document
+    .getElementById(
+        "popupTitle"
+    )
+    .textContent =
+        title;
+
+
+    document
+    .getElementById(
+        "popupMessage"
+    )
+    .textContent =
+        message;
+
+
+    icon.className =
+        "popup-icon";
+
+
+    if(type === "error"){
+
+        icon.classList.add(
+            "error"
+        );
+
+        icon.textContent =
+            "✕";
+
+    }
+
+    else if(type === "warning"){
+
+        icon.classList.add(
+            "warning"
+        );
+
+        icon.textContent =
+            "⚠";
+
+    }
+
+    else{
+
+        icon.textContent =
+            "✓";
+
+    }
+
+
+    document
+    .getElementById(
+        "popupActions"
+    )
+    .innerHTML = `
+
+        <button
+            class="popup-btn success"
+            onclick="closePopup()"
+        >
+            OK
+        </button>
+
+    `;
+
+
+    overlay
+    .classList
+    .add("show");
+
+}
+
+
+/* ========================================
+   CONFIRM POPUP
+======================================== */
+
+function showConfirmPopup(
+    title,
+    message,
+    confirmFunction
+){
+
+    const overlay =
+        document.getElementById(
+            "popupOverlay"
+        );
+
+
+    const icon =
+        document.getElementById(
+            "popupIcon"
+        );
+
+
+    document
+    .getElementById(
+        "popupTitle"
+    )
+    .textContent =
+        title;
+
+
+    document
+    .getElementById(
+        "popupMessage"
+    )
+    .textContent =
+        message;
+
+
+    icon.className =
+        "popup-icon warning";
+
+
+    icon.textContent =
+        "⚠";
+
+
+    document
+    .getElementById(
+        "popupActions"
+    )
+    .innerHTML = `
+
+        <button
+            class="popup-btn cancel"
+            onclick="closePopup()"
+        >
+            Cancel
+        </button>
+
+        <button
+            class="popup-btn confirm"
+            id="confirmButton"
+        >
+            Delete
+        </button>
+
+    `;
+
+
+    document
+    .getElementById(
+        "confirmButton"
+    )
+    .onclick =
+    async function(){
+
+        this.disabled =
+            true;
+
+        this.textContent =
+            "Deleting...";
+
+
+        try{
+
+            await confirmFunction();
+
+            closePopup();
+
+        }catch(error){
+
+            console.error(error);
+
+            this.disabled =
+                false;
+
+            this.textContent =
+                "Delete";
+
+        }
+
+    };
+
+
+    overlay
+    .classList
+    .add("show");
+
+}
+
+
+/* ========================================
+   CLOSE POPUP
+======================================== */
+
+window.closePopup =
+function(){
+
+    document
+    .getElementById(
+        "popupOverlay"
+    )
+    .classList
+    .remove("show");
+
+};
+
+
+/* ========================================
+   BACKGROUND CLOSE
+======================================== */
+
+document
+.getElementById(
+    "detailsOverlay"
+)
+.addEventListener(
+    "click",
+    function(event){
+
+        if(
+            event.target ===
+            this
+        ){
+
+            closeDetails();
+
+        }
+
+    }
+);
+
+
+document
+.getElementById(
+    "popupOverlay"
+)
+.addEventListener(
+    "click",
+    function(event){
+
+        if(
+            event.target ===
+            this
+        ){
+
+            closePopup();
+
+        }
+
+    }
+);
+
+
+/* ========================================
+   HELPERS
+======================================== */
+
+function formatDate(
+    value
+){
+
+    if(!value){
+
+        return "—";
+
+    }
+
+
+    const date =
+        new Date(value);
+
+
+    if(
+        Number.isNaN(
+            date.getTime()
+        )
+    ){
+
+        return "—";
+
+    }
+
+
+    return date.toLocaleString(
+        "en-IN",
+        {
+            day:"2-digit",
+            month:"short",
+            year:"numeric",
+            hour:"2-digit",
+            minute:"2-digit"
+        }
+    );
+
+}
+
+
+function capitalize(
+    value
+){
+
+    if(!value){
+
+        return "";
+
+    }
+
+
+    return value
+        .charAt(0)
+        .toUpperCase() +
+        value.slice(1);
+
+}
+
+
+function escapeHtml(
+    value
+){
+
+    return String(
+        value ?? ""
+    )
+    .replaceAll(
+        "&",
+        "&amp;"
+    )
+    .replaceAll(
+        "<",
+        "&lt;"
+    )
+    .replaceAll(
+        ">",
+        "&gt;"
+    )
+    .replaceAll(
+        '"',
+        "&quot;"
+    )
+    .replaceAll(
+        "'",
+        "&#039;"
+    );
+
+}
+
+
+function escapeAttribute(
+    value
+){
+
+    return String(
+        value ?? ""
+    )
+    .replaceAll(
+        "\\",
+        "\\\\"
+    )
+    .replaceAll(
+        "'",
+        "\\'"
+    )
+    .replaceAll(
+        '"',
+        "&quot;"
+    )
+    .replaceAll(
+        "<",
+        "&lt;"
+    )
+    .replaceAll(
+        ">",
+        "&gt;"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
